@@ -2,6 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<packaging>pom</packaging>
+	<modules>
+		<module>goodsmash-persist</module>
+		<module>goodsmash-app</module>
+		<module>goodsmash-service</module>
+		<module>goodsmash-spec</module>
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -12,7 +19,7 @@
 	<artifactId>goodsmash</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>goodsmash</name>
-	<description>Demo project for Spring Boot</description>
+	<description>BO for smash front-end, pépites and papicolo</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
@@ -56,22 +63,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>
