@@ -16,3 +16,5 @@ The project has the following modules :
 
 Install notes : 
 The generated spec might not be accessible in other modules of the project. To fix this, on IntelliJ, you can open project settings -> modules -> goodsmash-app -> dependencies -> add module dependency goodsmash-spec. If you have an error while saving because content root is already defined in other module project settings -> modules -> goodsmash -> sources -> remove paths in the content root tab not belonging to other modules.
+
+How to fix Spring Boot Multi-Module maven project repackage failed (Spring projects with multi modules) : put the spring-boot-maven-plugin in the pom of the module containing the Application class (https://stackoverflow.com/a/57983802)
