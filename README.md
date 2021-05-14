@@ -5,7 +5,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/MarcSechet/good-smash)
 ![GitHub](https://img.shields.io/github/license/MarcSechet/good-smash)
 
-# good-smash
+# Good Smash
 
 Projects containing a single BO used for multiple front end :
 - Smash 
