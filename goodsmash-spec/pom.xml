@@ -14,6 +14,44 @@
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
+        <apiPackage>${project.groupId}.${project.parent.artifactId}.spec</apiPackage>
+        <apiSourceFolder>src/gen/main/java</apiSourceFolder>
     </properties>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.openapitools</groupId>
+            <artifactId>openapi-generator-maven-plugin</artifactId>
+            <!-- RELEASE_VERSION -->
+            <version>5.1.0</version>
+            <!-- /RELEASE_VERSION -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>generate</goal>
+                    </goals>
+                    <configuration>
+                        <inputSpec>${project.basedir}/src/main/resources/api.yaml</inputSpec>
+                        <generatorName>java</generatorName>
+                        <configOptions>
+                            <modelPackage>${apiPackage}.model</modelPackage>
+                            <apiPackage>${apiPackage}.api</apiPackage>
+                            <sourceFolder>${apiSourceFolder}</sourceFolder>
 
+                            <dateLibrary>java8</dateLibrary>
+                            <java8>true</java8>
+                            <useTags>true</useTags>
+                            <interfaceOnly>true</interfaceOnly>
+                            <useBeanValidation>true</useBeanValidation>
+                            <performBeanValidation>true</performBeanValidation>
+                            <useOptional>false</useOptional>
+                            <async>false</async>
+                            <hateoas>false</hateoas>
+                        </configOptions>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 </project>

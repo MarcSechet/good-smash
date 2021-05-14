@@ -10,6 +10,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 public class GoodsmashApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(GoodsmashApplication.class, args);
 	}
 }

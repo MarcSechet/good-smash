@@ -1,0 +1,22 @@
+openapi: 3.0.2
+info:
+   version: 1.0.0
+   title: Multiple APIs
+   license:
+      name: Poulet
+servers:
+  - url: 'http://localhost:{port}/api'
+    variables:
+      port:
+        default: '6789'
+    description: Dev
+  - url: 'http://smash-back.herokuapp.com/api'
+    description: prod
+
+tags:
+- name: Smash
+  description: Smash APIs
+
+paths:
+  '/tests':
+    $ref: 'tests.yaml#/paths/~1tests'

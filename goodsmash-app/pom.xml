@@ -19,34 +19,38 @@
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
     <build>
+        <finalName>compliance-app</finalName>
+
         <plugins>
+
+
+            <!-- Permet de copier les YAML de la dépendance api-specification
+                dans le dossier swagger/spec pour le swagger-ui static -->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <executable>true</executable>
-                    <folders>
-                        <!-- On ajoute les classes générées par openapi-generator
-                            dans le classpath -->
-                        <folder>${project.build.directory}/generated-sources/openapi/${apiSourceFolder}</folder>
-                    </folders>
-                </configuration>
+                <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
+                        <id>unpack</id>
+                        <phase>prepare-package</phase>
                         <goals>
-                            <goal>build-info</goal>
+                            <goal>unpack</goal>
                         </goals>
                         <configuration>
-                            <additionalProperties>
-                                <encoding.source>UTF-8</encoding.source>
-                                <encoding.reporting>UTF-8</encoding.reporting>
-                                <java.source>${maven.compiler.source}</java.source>
-                                <java.target>${maven.compiler.target}</java.target>
-                            </additionalProperties>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>${project.groupId}</groupId>
+                                    <artifactId>goodsmash-spec</artifactId>
+                                    <version>${project.version}</version>
+                                    <outputDirectory>${project.build.directory}/classes/public/swagger</outputDirectory>
+                                    <includes>*.yaml</includes>
+                                </artifactItem>
+                            </artifactItems>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
+
 </project>
