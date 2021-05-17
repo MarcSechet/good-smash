@@ -24,14 +24,17 @@
             <artifactId>goodsmash-persist</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>goodsmash-spec</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>compliance-app</finalName>
+        <finalName>goodsmash-app</finalName>
 
         <plugins>
-
-
             <!-- Permet de copier les YAML de la dépendance api-specification
                 dans le dossier swagger/spec pour le swagger-ui static -->
             <plugin>
