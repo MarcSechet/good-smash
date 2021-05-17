@@ -2,9 +2,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.stream.Stream;
 
-import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 
 public class FlyWayTest {
 
@@ -17,7 +18,7 @@ public class FlyWayTest {
         Stream.of(directory.list()).forEach(fileName -> {
             var split = fileName.split("__");
             var version = split[0];
-            assertFalse("Duplicate flyway version: " + version, listOfVersion.contains(version));
+            Assertions.assertFalse(listOfVersion.contains(version), "Duplicate flyway version: " + version);
             listOfVersion.add(version);
         });
     }
