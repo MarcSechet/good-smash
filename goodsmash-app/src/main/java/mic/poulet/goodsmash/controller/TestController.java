@@ -1,4 +1,4 @@
-package mic.poulet.goodsmash.controller.smash;
+package mic.poulet.goodsmash.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import mic.poulet.goodsmash.spec.api.TestsApi;
 
 @Controller
-@RequestMapping("${api.base-path:}")
+@RequestMapping("${api-smash.base-path:}")
 public class TestController implements TestsApi {
 
 	@Override
