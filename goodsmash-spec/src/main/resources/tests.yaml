@@ -1,0 +1,21 @@
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: Messaging API
+  license:
+    name: Poulet
+servers:
+  - url: 'http://localhost:8080/api'
+tags:
+  - name: Test
+    description: Test APIs
+paths:
+  '/tests':
+    get:
+      tags:
+        - Test
+      summary: test BO availability
+      operationId: test
+      responses:
+        '200':
+          description: OK
