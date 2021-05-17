@@ -41,6 +41,7 @@
                         <configOptions>
                             <delegatePattern>true</delegatePattern>
                             <dateLibrary>java8</dateLibrary>
+                            <interfaceOnly>true</interfaceOnly>
                             <useBeanValidation>true</useBeanValidation>
                             <performBeanValidation>true</performBeanValidation>
                             <useOptional>false</useOptional>
