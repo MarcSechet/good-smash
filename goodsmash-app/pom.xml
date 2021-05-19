@@ -21,7 +21,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>goodsmash-persist</artifactId>
+            <artifactId>goodsmash-service</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -34,6 +34,11 @@
             <artifactId>junit-jupiter</artifactId>
             <version>1.15.3</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>2.4.2</version>
         </dependency>
     </dependencies>
 
