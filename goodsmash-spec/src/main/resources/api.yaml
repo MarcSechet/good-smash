@@ -1,9 +1,9 @@
 openapi: 3.0.2
 info:
-   version: 1.0.0
-   title: Multiple APIs
-   license:
-      name: Poulet
+  version: 1.0.0
+  title: Multiple APIs
+  license:
+    name: Poulet
 servers:
   - url: 'http://localhost:{port}/api'
     variables:
@@ -14,9 +14,181 @@ servers:
     description: prod
 
 tags:
-- name: Smash
-  description: Smash APIs
+  - name: Smash
+    description: Smash APIs
+
+components:
+  parameters:
+    ## Path ##
+    id:
+      in: path
+      required: true
+      name: id
+      description: element id
+      schema:
+        type: integer
+        format: int64
+  schemas:
+    CategoryDto:
+      title: Category
+      type: string
+      enum:
+        - NORMAL
+        - SILLY
+        - HOT
+        - BAR
+
+    QuestionTypeDto:
+      title: QuestionType
+      type: string
+      enum:
+        - NORMAL
+        - EVENT
+        - EVENT_WITH_CHILD_RIGHT_AFTER
+        - CUL_SEC
+
+    QuestionDto:
+      title: QuestionDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        key:
+          type: string
+        parentKey:
+          type: string
+        question:
+          type: string
+          maxLength: 1200
+        nbPlayers:
+          type: integer
+          format: int32
+        category:
+          $ref: "#/components/schemas/CategoryDto"
+        questionType:
+          $ref: "#/components/schemas/QuestionTypeDto"
+        children:
+          type: array
+          items:
+            $ref: "#/components/schemas/QuestionDto"
+        questionFromPicolo:
+          type: boolean
+
 
 paths:
+  '/papicolo/questions':
+    get:
+      tags:
+        - Papicolo
+      summary: Get all questions
+      operationId: getAll
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/QuestionDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Papicolo
+      summary: create question
+      operationId: create
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QuestionDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QuestionDto'
+
+  '/papicolo/questions/{id}':
+    get:
+      tags:
+        - Papicolo
+      summary: get question by id
+      operationId: getById
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QuestionDto'
+    patch:
+      tags:
+        - Papicolo
+      summary: patch question by id
+      operationId: updateById
+      parameters:
+        - $ref: '#/components/parameters/id'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QuestionDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QuestionDto'
+    delete:
+      tags:
+        - Papicolo
+      summary: delete question by id
+      operationId: deleteById
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: OK
+
+  '/papicolo/questions/import':
+    post:
+      tags:
+        - Papicolo
+      summary: Import all questions
+      operationId: importAllQuestions
+      responses:
+        '200':
+          description: OK
+        '500':
+          $ref: '#/components/responses/500'
+
+  '/papicolo/questions/{id}/children/{childId}':
+    delete:
+      tags:
+        - Papicolo
+      summary: delete child question by id
+      operationId: deleteChildById
+      parameters:
+        - $ref: '#/components/parameters/id'
+        - in: path
+          required: true
+          name: childId
+          description: child element id
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: OK
+
   '/tests':
     $ref: 'tests.yaml#/paths/~1tests'
+

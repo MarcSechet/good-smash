@@ -1,0 +1,451 @@
+key,parent_key,text,type,nb_players
+,,"%s, si tu tournes à la bière aromatisée tu bois, autrement tu distribues une gorgée",1,1
+,,"%s, si tu tournes à la pinte tu bois, autrement tu distribues une gorgée",1,1
+,,"%s, si tu tournes au demi (25cl) tu bois, autrement tu distribues une gorgée",1,1
+,,"%s, prends le pire shooter du bar",1,1
+,,Le dernier joueur à être allé dans un bar distribue 2 gorgées,1,0
+,,Le premier joueur à être entré dans le bar distribue $ gorgées,1,0
+,,Le premier joueur à être entré dans le bar boit,1,0
+,,Le dernier joueur à être entré dans le bar boit,1,0
+,,Le joueur ayant payé le moins jusqu'à maintenant boit,1,0
+,,Le joueur ayant payé le plus jusqu'à maintenant distribue $ gorgées,1,0
+,,"%s, si c'était ton idée de venir ici distribue $ gorgées. Sinon bois",1,1
+,,"%s, si c'était ton idée de faire un Picolo Bar distribue $ gorgées. Sinon bois",1,1
+,,"%s, bois autant que de défis Picolo que tu as foirés aujourd'hui. Aucun défi foiré ? Bois une gorgée quand même ",1,1
+,,"%s, bois autant que de défis Picolo réalisés par l'équipe aujourd'hui",1,1
+,,"%s, bois autant que de défis Picolo que tu as réalisés aujourd'hui. Aucun défi réalisé ? Bois une gorgée quand même ",1,1
+,,"%s, bois autant que de défis Picolo refusés par tous les joueurs d'aujourd'hui",1,1
+,,"%s, bois autant que de défis Picolo que tu as refusés aujourd'hui. Aucun défi refusé ? Bravo ! Tu distribues $ gorgées",1,1
+,,"%s, si tu as une pièce mets-là dans le verre du joueur qui en boira $. Bois $ gorgées sinon",1,1
+,,%s et %s égalisent leur verre : le joueur ayant le verre le plus rempli le verse dans le verre de l'autre,1,2
+,,%s et %s égalisent leur verre : le trop plein du plus grand verre finit dans l'estomac de son propriétaire,1,2
+,,"%s, va demander des pailles pour tout le monde ou bois",1,1
+,,Le premier joueur à aller poser un étron aux chiottes sans tirer la chasse pourra distribuer un cul sec !,1,0
+,,"%s, la prochaine personne que tu touches boit",1,1
+,,"%s, fais boire quelqu'un si t'as fait plusieurs bars aujourd'hui, sinon bois",1,1
+,,"%s, fais boire quelqu'un si t'as parlé au serveur, sinon bois",1,1
+,,"%s, fais boire quelqu'un si t'as déjà payé quelque chose, sinon bois",1,1
+,,"%s, fais boire quelqu'un s'il y a des serveuses, sinon bois",1,1
+,,"%s, fais boire quelqu'un si t'es déjà venu(e) dans ce bar avant aujourd'hui, sinon bois",1,1
+,,"%s, fais boire quelqu'un si t'es jamais venu(e) dans ce bar avant aujourd'hui, sinon bois",1,1
+,,"%s, fais boire quelqu'un si tu connais d'autres personnes dans le bar que celles qui sont en train de jouer, sinon bois",1,1
+,,"S'il y a d'autres joueurs de Picolo Bar autre que votre table, démerdez-vous pour leur offrir un verre. Sinon tout le monde trinque !",1,0
+,,"%s, fais boire quelqu'un si t'as déjà pécho dans ce bar, sinon bois",1,1
+,,"%s, distribue un cul sec si tu as un ou une ex qui rôde par ici, bois sinon",1,1
+,,"%s, si t'es déjà sorti(e) avec un barman ou une barmaid tu bois, autrement tu donnes une gorgée",1,1
+,,"%s, si t'es déjà sorti(e) avec un serveur ou une serveuse tu bois, autrement tu donnes une gorgée",1,1
+,,"%s, distribue autant de gorgées qu'il y a de thons dans le bar, hormis tes potes",1,1
+,,"%s, distribue autant de gorgées qu'il y a de canons dans le bar, hormis tes potes",1,1
+,,"%s, distribue autant de gorgées qu'il y a de types chauves dans le bar, bois s'il n'y en a pas",1,1
+,,"%s, distribue autant de gorgées qu'il y a de binoclards dans le bar (4 max), tu bois s'il n'y en a pas",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue ne parle pas dans les 7 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue reste dans la même position 7 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue ne regarde pas dans ta direction dans les 12 premières secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un d'assis pas trop loin. A ton ""top"", si cette personne inconnue se lève dans les 15 secondes tu peux distribuer $ gorgées ! Tu boiras sinon",1,1
+,,"%s, choisis une personne inconnue debout pas trop loin. A ton ""top"", si cette personne s'assoit dans les 15 secondes tu peux distribuer $ gorgées ! Tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue rigole dans les 7 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue sourit dans les 4 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue boit dans les 7 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue ne boit pas dans les 10 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue ne sourit pas dans les 5 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue ne rigole pas dans les 10 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s, choisis quelqu'un pas trop loin. A ton ""top"", si cette personne inconnue commande dans les 30 secondes tu peux distribuer $ gorgées, tu boiras sinon",1,1
+,,"%s et %s, choisissez un poulain chacun (un / une inconnue). Celui dont le poulain parlera en premier distribuera $ gorgées",1,2
+,,"%s et %s, choisissez un poulain chacun (un / une inconnue). Celui dont le poulain commandera en premier distribuera $ gorgées",1,2
+,,"%s et %s, choisissez un poulain chacun (un / une inconnue). Celui dont le poulain fumera en premier distribuera $ gorgées",1,2
+,,"%s et %s, choisissez un poulain chacun (un / une inconnue). Celui dont le poulain ira aux chiottes en premier distribuera $ gorgées",1,2
+,,"%s et %s, choisissez un poulain chacun (un / une inconnue). Celui dont le poulain sourira en premier distribuera $ gorgées",1,2
+,,"%s et %s, choisissez un poulain chacun (un / une inconnue). Celui dont le poulain rigolera en premier distribuera $ gorgées",1,2
+,,Le premier d'entre vous à avoir commandé va gentiment boire 2 gorgées,1,0
+,,"Le dernier d'entre vous à avoir commandé, rattrape ton retard en buvant 2 gorgées",1,0
+,,"%s, si tu as serré la main ou fait la bise à un membre du staff tu bois. Sinon fais boire quelqu'un",1,1
+,,"%s, si tu as un dessous de verre fais boire quelqu'un, sinon tu bois",1,1
+,,"%s, si ce bar est ton bar préféré dans cette ville assume et bois, autrement tu distribues $ gorgées",1,1
+,,"%s, distribue $ gorgées si t'es déjà venu(e) plus de 3 fois dans ce bar, autrement bois",1,1
+,,"%s, distribue $ gorgées si t'es déjà venu(e) dans ce bar il y a plus d'un an, autrement bois",1,1
+,,"%s, distribue $ gorgées si tu t'es déjà embrouillé(e) avec quelqu'un dans ce bar, autrement bois",1,1
+,,"%s, distribue $ gorgées si tu t'es déjà mis(e) une énorme race dans ce bar, autrement bois",1,1
+,,"%s, distribue $ gorgées si t'es déjà venu(e) en couple dans ce bar, autrement bois",1,1
+,,"%s, distribue $ gorgées si t'es déjà venu(e) célibataire dans ce bar, autrement bois",1,1
+,,"%s, si tu as dit bonjour aux serveurs en arrivant tellement tu connais le coin distribue $ gorgées, autrement bois",1,1
+,,"%s, si t'as commencé la soirée par un soft tu bois, autrement fais boire quelqu'un",1,1
+,,"%s, si t'as déjà vomi en sortant de ce bar distribue $ gorgées, autrement tu bois",1,1
+,,Le premier joueur à trouver un couple distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,Le premier joueur à trouver un couple qui se font iech distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,Le premier joueur à trouver un type qui rigole distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,Le premier joueur à trouver une fille en robe distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,Le premier joueur à trouver un shooter distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,Le premier joueur à trouver une pinte vide distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,Le premier joueur à trouver un animal distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,Le premier joueur à trouver une table vide distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,Le premier joueur à trouver un groupe de 4 potes distribue $ gorgées. Personne ? Tout le monde boit !,1,0
+,,"Si vous êtes en terrasse, %s peut distribuer une gorgée. Si vous êtes à l'intérieur, %s boit",1,2
+,,"Si vous êtes tous arrivés en même temps, %s tu bois. S'il y a eu des retardataires ça sera %s",1,2
+,,"%s, si tu es la première personne arrivée tu peux distribuer $ gorgées, sinon bois, ça t'apprendra",1,1
+,,"%s, soit tu es la dernière personne arrivée et tu bois $ gorgées, soit tu distribues une gorgée",1,1
+,,"Ceux qui ont déjà commencé à dire ""j'ai oublié ma carte tu peux m'avancer ?"" vous buvez $ gorgées",1,0
+,,Ceux qui ont râlé parce qu'ils auraient voulu être dans un autre bar boivent,1,0
+,,Ceux qui ont quelque peu râlé parce qu'ils voulaient pas sortir ce soir boivent,1,0
+,,"%s, si t'as déjà tenté un défi ""Picolo Bar"" tu peux distribuer une gorgée. Et tu bois s'il a été foiré",1,1
+,,"Est-ce les happy hours ? Oui, %s boit. Non, c'est %s qui boit",1,2
+,,"S'il n'y a pas de musique ici, %s c'est ta faute tu bois une gorgée. S'il y en a merci à toi ! Bois 2 gorgées",1,1
+coffee,,"%s, t'es mister coffee. Tu vas demander un café, surtout ne le bois pas et garde le pour la suite",2,3
+,coffee,"%s peut dès à présent partager son café, équitablement ou non, dans les verres de %s et %s",2,3
+,coffee,"%s, choisis dans quel verre tu vas pouvoir mettre ton café froid",2,1
+,coffee,"%s, tu vas pouvoir mettre ton café froid dans ton verre... A la tienne !",2,1
+click-finger,,"%s, joue le rythme de la musique en claquant des doigts jusqu'à nouvel ordre. Ou bois $ gorgées à chaque nouvelle chanson",2,1
+,click-finger,"%s, tu peux arrêter de claquer des doigts",2,1
+alone-at-the-bar,,"%s, va boire seul(e) au bar",2,1
+,alone-at-the-bar,%s peut revenir !,2,1
+I-assume-mongolito,,"%s, aies l'air con s'il te plait : de temps en temps gueule un coup en mode mongolito. Tu pourras distribuer une gorgée pour chaque cri",2,1
+,I-assume-mongolito,"%s, t'as fini d'être débile",2,1
+3-straws,,"%s, tu boiras avec 3 pailles à partir de maintenant ou ça sera une gorgée pour chaque nouvelle règle",2,1
+,3-straws,"%s, tu peux arrêter les 3 pailles",2,1
+choose-waiter,,"%s, choisis ton serveur chouchou. Dès qu'il sert un verre, fais un prout avec ta bouche ou bois une gorgée",2,1
+,choose-waiter,"%s, arrête de faire des prouts avec ta bouche, c'est ridicule",2,1
+hypersocial,,"%s, t'es l'hypersociable de la soirée, dis bonjour à chaque personne qui passe devant toi. Une gorgée par bonjour loupé",2,1
+,hypersocial,"%s, t'as fini d'être hyper sociable",2,1
+tampon-ear,,"%s, trouve un tampon et garde-le sur l'oreille, ça c'est la classe",2,1
+,tampon-ear,"%s, enlève ton tampon ça saigne plus",2,1
+punition,,"%s, t'es puni(e) ! Va au coin du bar. Si des gens te parlent, t'as que le droit de dire ""JE SUIS PUNI(E)""",2,1
+,punition,"%s peut revenir ! Ou pas, vous pouvez simplement passer la règle ;)",2,1
+under-the-table,,"%s, reste sous la table. On te dira quand revenir",2,1
+,under-the-table,%s peut revenir parmi nous ! On peut aussi faire comme si cette règle n'était jamais passée,2,1
+choose-your-partner,,"%s, choisis une fille à la table d'à côté. Dès qu'elle boit tu devras dire ""ooooolé""",2,1
+,choose-your-partner,"%s, t'as fini d'emmerder la fille d'à côté !",2,1
+speak-when-other-speak,,"%s, choisis une personne inconnue pas trop loin. Dès que ton élu(e) parle, tu dois faire ""blablablablabla""",2,1
+,speak-when-other-speak,"%s, laisse donc cette personne tranquille",2,1
+,,"Jeu de la pièce jusqu'à la fin du jeu ! %s, prends une pièce et mets-la dans un verre. La cible prendra $ gorgées, et pourra à son tour distribuer la pièce ",4,1
+,,"Mettez un paquet de clopes sur sa tranche au bord de la table, chacun essaye à son tour de lui faire faire un tour d'un seul coup. Les perdants boivent, les gagnants distribuent une gorgée, %s à toi l'honneur",4,1
+,,"Mettez une pièce au bord de la table, chacun essaye à son tour de la rapprocher le plus possible du bord d’en face d'un seul coup. Le plus proche distribue 3 gorgées, %s à toi l'honneur",4,1
+,,Blind test ! Le premier joueur qui donne le titre de la chanson actuelle distribue $ gorgées,4,0
+,,Petit téléphone arabe ! %s tu choisis une phrase et tu la chuchotes à ton voisin de gauche. Ainsi de suite jusqu'à arriver de nouveau à toi. Les joueurs qui auront merdé boivent,4,1
+,,"%s commence par faire tourner une pièce sur la table. Chacun votre tour, donnez un coup avec votre doigt pour continuer de la faire tourner. Le perdant boit $ gorgées",4,1
+,,Blind test ! Le premier joueur qui donne l'interprète de la chanson actuelle distribue $ gorgées,4,0
+,,Blind test ! Le premier joueur qui trouve le titre de la chanson d'avant distribue $ gorgées. Personne ? Tout le monde boit,4,0
+,,"Faites une partie de Mikado avec une vingtaine de clopes. Chaque cigarette prise dans les règles permet de donner une gorgée, %s commence",4,1
+,,"Chacun votre tour, tentez de deviner quelle est la fille la plus canon du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quel est LE type bogoss du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quelle est la fille la plus facile du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quelle est la fille la plus moche du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quel est le type le plus en manque du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quel est le type le plus moche du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quel est le meilleur alcool du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quelle est la meilleure bière du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quelle est la fille la plus chaude du bar selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quel est le meilleur bar de la ville selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quelle est la meilleure boîte de la ville selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quel est le lieu en ville où c'est le plus facile pour pécho selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"Chacun votre tour, tentez de deviner quelle est la meilleure chanson du moment selon %s. Le premier qui trouve distribue $ gorgées ! %s commence",16,2
+,,"%s, t'es désigné(e) pour commander la prochaine tournée, et interdit pour toi d'utiliser les verbes ""avoir"", ""prendre"" et ""commander""",17,1
+,,"%s et %s, commandez en même temps. Le premier servi distribuera $ gorgées pendant que l'autre les boira",17,2
+,,"%s, va chercher un petit amuse-gueule pour tout le monde ou bois",17,1
+,,"%s, sors le porte-feuille et paye la prochaine tournée",17,1
+,,"%s, offre à %s le cocktail de son choix",17,2
+,,Ça va s'enjailler... %s paye sa tournée de shooters !,17,1
+,,"Pour info, le dernier à terminer son verre paiera la prochaine tournée...",17,0
+,,"%s, s'il y a un joueur à qui il reste une paire de coui***, paye lui donc un shooter",17,1
+,,"%s, paye ta pinte ! Elle sera pour %s ou %s, au premier qui finira son verre.",17,3
+,,"%s, paye ton verre ! %s, choisis ce que tu veux ",17,2
+,,"%s, paye un verre à un ou une inconnue choisie par %s",17,2
+,,"Plutôt un mètre de shooters ou des mojitos ? Votez en même temps, les perdants payent la bonne réponse pour la prochaine tournée",17,0
+,,"Plutôt bières blondes ou blanches ? Votez en même temps, les perdants payent la bonne réponse pour la prochaine tournée",17,0
+,,"Plutôt bière ou n'importe quoi d'autre ? Votez en même temps, les perdants payent la bonne réponse pour la prochaine tournée",17,0
+,,"%s, soit tu bois 6 culs secs d'affilée, soit tu te proposes gentiment pour payer la prochaine tournée",17,1
+,,"%s, tu décides qui paye la prochaine tournée entre %s et %s",17,3
+,,"%s, tu décides qui paye la prochaine tournée",17,1
+,,"%s, grande princesse ! T'as le droit de te faire payer un verre par un joueur au choix et tu choisis ce que tu veux",17,1
+,,"%s, va taxer une capote ou bois",18,1
+,,"%s, va taxer une cigarette ou bois",18,1
+,,"%s, va demander à une personne inconnue si elle connait Picolo. Si c'est le cas tu distribues $ gorgées, sinon tu bois",18,1
+,,"%s, essaye de deviner l'âge d'une personne inconnue choisie par %s. Va lui demander, si tu gagnes tu distribues $ gorgées, tu bois sinon",18,2
+,,"%s, essaye de deviner la taille d'une personne inconnue choisie par %s. Va lui demander, si tu gagnes tu distribues $ gorgées, tu bois sinon",18,2
+,,"%s, essaye de deviner la taille de soutif d'une inconnue choisie par %s. Va lui demander, si tu gagnes tu distribues $ gorgées, tu bois sinon",18,2
+,,"%s, essaye de deviner la taille de pied d'une personne inconnue choisie par %s. Va lui demander, si tu gagnes tu distribues $ gorgées, tu bois sinon",18,2
+,,"%s, choisis une personne inconnue. Si elle est célibataire tu distribues $ gorgées, sinon tu bois",18,1
+,,"%s, laisse %s choisir une personne inconnue. Essaye de deviner à quelle heure elle est arrivée. Tu gagnes tu distribues $ gorgées, tu perds tu bois",18,2
+,,"%s, va proposer une chanson au bar. Tout refus sera pénalisé d'une gorgée, tu pourras en distribuer $ s'ils acceptent",18,1
+,,"%s, va demander au DJ de baisser le son ou bois $ gorgées. Défi réussi ? Tu peux distribuer $ gorgées",18,1
+,,"%s, va demander au DJ de monter le son ou bois $ gorgées. Défi réussi ? Tu peux distribuer $ gorgées",18,1
+,,"%s, raconte une blague à une personne inconnue. Si tu fais rire ou sourire tu pourras distribuer $ gorgées. Refuse et bois $ gorgées ",18,1
+,,"%s, accoste un groupe d'inconnus en montrant une photo de mouche, ou bois",18,1
+,,"%s, accoste un groupe d'inconnus en montrant une photo de dinosaure, ou bois",18,1
+,,"%s, accoste un groupe d'inconnus en montrant une photo de choucroute, ou bois",18,1
+,,"%s, demande à un groupe d'inconnus si ton toboggan les intéresse (montre une photo leboncoin), ou bois",18,1
+,,"%s, demande à un groupe d'inconnus si ton portemanteau les intéresse (montre une photo leboncoin), ou bois",18,1
+,,"%s, demande à un groupe d'inconnus si ton micro-ondes les intéresse (montre une photo leboncoin), ou bois",18,1
+,,"%s, fais une déclaration d'amour à une personne inconnue ou bois $ gorgées",18,1
+,,"%s, demande à un groupe si tu peux les prendre en photo tellement tu les trouves beaux, ou bois",18,1
+,,"%s, demande à une personne inconnue de vous prendre en photo, envoie-nous la photo à l'occaz ;)",18,1
+,,"%s, montre cet écran au barman. S'il boit, tu peux distribuer $ gorgées, sinon tu bois",18,1
+,,"%s, montre cet écran à un type inconnu. S'il boit, tu peux distribuer $ gorgées, sinon tu bois",18,1
+,,"%s, montre cet écran à une inconnue. Si elle boit, tu peux distribuer $ gorgées, sinon tu bois",18,1
+,,"%s, dessine un éléphant sur une serviette et offre-la à une personne inconnue choisie par %s, ou bois $ gorgées",18,2
+,,"%s, dessine une pomme sur une serviette et offre-la à une personne inconnue choisie par %s, ou bois $ gorgées",18,2
+,,"%s, dessine un lapin sur une serviette et offre-la à une personne inconnue choisie par %s, ou bois $ gorgées",18,2
+,,"%s, fais une bataille de pouce avec une personne inconnue choisie par %s. Si tu gagnes, distribue $ gorgées. Si ton adversaire refuse ou gagne, tu bois",18,2
+,,"%s, fais un Chifoumi avec une personne inconnue choisie par %s. Si tu gagnes, distribue $ gorgées. Si ton adversaire refuse ou gagne, tu bois",18,2
+,,"%s, demande à une personne inconnue choisie par %s de deviner ton âge. Si c'est gagné, jackpot ! Tu distribues $ gorgées. Autrement bois",18,2
+,,"%s, demande à une personne inconnue choisie par %s de deviner ta taille. Si c'est gagné, jackpot ! Tu distribues $ gorgées. Autrement bois",18,2
+,,"%s, demande à une personne inconnue choisie par %s de deviner combien tu chausses. Si c'est gagné, jackpot ! Tu distribues $ gorgées. Autrement bois",18,2
+,,"%s, ramène le numéro d'un serveur ou d'une serveuse, ou bois $ gorgées",18,1
+,,"%s, tu as 5 minutes pour trouver une personne mariée. Si tu échoues tu bois, autrement tu pourras distribuer $ gorgées",18,1
+,,"%s, trouve une personne qui a téléchargé Picolo. Tu as 3 chances, réussis et tu peux distribuer $ gorgées. Si tu refuses tu bois",18,1
+,,"%s, trouve une personne qui n'a pas téléchargé Picolo. Si tu réussis à lui faire télécharger, tu pourras distribuer $ gorgées, sinon tu bois",18,1
+,,"%s, trouve une personne qui a testé et kiffé Picolo. Réussis et tu pourras distribuer $ gorgées, échoue et bois",18,1
+,,"%s, fais un clin d'oeil à une personne choisie par %s ou bois $ gorgées",18,2
+,,"%s, demande au serveur son prénom. S'il le donne tu pourras distribuer une gorgée",18,1
+,,"%s, sens le cul d'un inconnu discrètement... Bois $ gorgées si tu refuses",18,1
+,,"%s, demande à une personne inconnue si elle est pour ou contre l'avortement chez les crevettes. Pour : tu peux distribuer $ gorgées. Contre : tu bois",18,1
+,,"%s, demande à une personne inconnue si elle est pour ou contre le racisme contre les singes albinos. Pour : tu peux distribuer $ gorgées. Contre : tu bois",18,1
+,,"%s, ramène le numéro d'une personne inconnue ou bois $ gorgées",18,1
+,,"%s, donne ton numéro à une personne inconnue choisie par le groupe, ou bois",18,1
+,,"%s, tente de deviner le signe astrologique d'une personne inconnue, va lui demander pour valider le défi. Ou bois $ gorgées",18,1
+,,"%s, donne ton numéro à une personne inconnue en disant que tu vends des produits de santé. Ou bois $ gorgées",18,1
+,,"%s, va proposer ton numéro à une personne inconnue en disant que t'es coach sportif. Ou bois $ gorgées",18,1
+,,"%s, demande à une personne inconnue de te prendre en photo. Ou bois $ gorgées",18,1
+,,"%s, demande à une personne inconnue si elle peut faire un selfie avec ton téléphone. Ou bois $ gorgées",18,1
+,,"%s, joue à pile ou face avec une personne inconnue. Tu gagnes le défi si tu gagnes le pile ou face. Ou bois $ gorgées",18,1
+,,"%s, demande à une personne inconnue de deviner ton signe astrologique. Tu gagnes si elle tombe juste. Ou bois $ gorgées",18,1
+,,"%s, trouve une personne vegan. Ou bois $ gorgées",18,1
+,,"%s, propose une partie de ping pong imaginaire à une personne inconnue. Tu gagnes si elle accepte. Ou bois $ gorgées",18,1
+,,"%s, propose un combat d'épées imaginaires à une personne inconnue. Tu gagnes si elle accepte. Ou bois $ gorgées",18,1
+,,"%s, propose une partie de beach volley imaginaire à une personne inconnue. Tu gagnes si elle accepte. Ou bois $ gorgées",18,1
+,,"%s, propose une partie de hockey imaginaire à une personne inconnue (tu seras le gardien). Tu gagnes si elle accepte. Ou bois $ gorgées",18,1
+,,"%s, propose un câlin gratuit à une personne inconnue. Tu gagnes si elle accepte. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner un singe à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner un hippopotame à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner un papillon à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner un chien enragé à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner un ours à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner le sport suivant à une personne inconnue : le hockey subaquatique. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner le sport suivant à une personne inconnue : le bobsleigh. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner l'épreuve suivante à une personne inconnue : le relais 4×100m nage libre. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner le terme ""photo-finish"" à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, tu dois imiter et faire deviner ""Lance Armstrong"" à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, choisis la question que tu veux. Tu va devoir la poser à une personne inconnue et prédire sa réponse. Ou bois $ gorgées",18,1
+,,"%s, va deviner le prénom d'une personne inconnue, tu as 60 secondes. Ou bois $ gorgées",18,1
+,,"%s, va deviner la ville de naissance d'une personne inconnue, tu as 60 secondes. Ou bois $ gorgées",18,1
+,,"%s, va deviner la date de naissance d'une personne inconnue, tu as 60 secondes. Ou bois $ gorgées",18,1
+,,"%s, va deviner l'âge d'une personne inconnue, tu as 60 secondes. Ou bois $ gorgées",18,1
+,,"%s, va deviner la taille d'une personne inconnue, tu as 60 secondes. Ou bois $ gorgées",18,1
+,,"%s, lance un objet rond vers un groupe d'inconnus et dis ""GRENADE"". Ou bois $ gorgées",18,1
+,,"%s, tu dois réussir à faire dire le mot ""Boudin"" à une personne inconnue sans dire le mot ni un mot de la même famille. Ou bois $ gorgées",18,1
+,,"%s, tu dois réussir à faire dire le mot ""Bouton blanc"" à une personne inconnue sans dire le mot ni un mot de la même famille. Ou bois $ gorgées",18,1
+,,"%s, tu dois réussir à faire dire le mot ""Brosse à chiotte"" à une personne inconnue sans dire le mot ni un mot de la même famille. Ou bois $ gorgées",18,1
+,,"%s, tu dois réussir à faire dire le mot ""Chemin boueux"" à une personne inconnue sans dire le mot ni un mot de la même famille. Ou bois $ gorgées",18,1
+,,"%s, tu dois réussir à faire dire le mot ""Dégorger le poireau"" à une personne inconnue sans dire le mot ni un mot de la même famille. Ou bois $ gorgées",18,1
+,,"%s, va demander quelque chose à quelqu'un la bouche pleine. Ou bois $ gorgées",18,1
+,,"%s, va taxer du rouge à lèvres à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, va taxer un mouchoir à une personne inconnue, dis que tu comptes t'en servir comme PQ. Ou bois $ gorgées",18,1
+,,"%s, va offrir un cadeau à une personne inconnue. Ce que tu veux. Ou bois $ gorgées",18,1
+,,"%s, va serrer la main d'au moins 10 personnes inconnues, tu as 30 secondes. Ou bois $ gorgées",18,1
+,,"%s, joue avec une personne inconnue : citez à tour de rôle les personnages d'Harry Potter. Si tu en cites plus que ton adversaire, tu gagnes le défi. Ou bois $ gorgées",18,1
+,,"%s, joue avec une personne inconnue : citez à tour de rôle les mots qui riment avec -nar. Si tu en cites plus que ton adversaire, tu gagnes le défi. Ou bois $ gorgées",18,1
+,,"%s, joue avec une personne inconnue : citez à tour de rôle les mots qui riment avec -ouille. Si tu en cites plus que ton adversaire, tu gagnes le défi. Ou bois $ gorgées",18,1
+,,"%s, joue avec une personne inconnue : citez à tour de rôle les mots qu'on utilise à la place de ""pénis"". Si tu en cites plus que ton adversaire, tu gagnes le défi. Ou bois $ gorgées",18,1
+,,"%s, joue avec une personne inconnue : citez à tour de rôle les méchants dans les films. Si tu en cites plus que ton adversaire, tu gagnes le défi. Ou bois $ gorgées",18,1
+,,"%s, joue avec une personne inconnue : citez à tour de rôle les endroits où on se sert d'une serviette. Si tu en cites plus que ton adversaire, tu gagnes le défi. Ou bois $ gorgées",18,1
+,,"%s, va lire un passage d'Harry Potter à une personne inconnue. Celui que tu veux. Ou bois $ gorgées",18,1
+,,"%s, va lire un passage d'une chanson de Black M à une personne inconnue. Celui que tu veux. Ou bois $ gorgées",18,1
+,,"%s, va lire un passage d'une chanson de Maitre Gims à une personne inconnue. Celui que tu veux. Ou bois $ gorgées",18,1
+,,"%s, va lire un passage d'une chanson de Matt Pokora à une personne inconnue. Celui que tu veux. Ou bois $ gorgées",18,1
+,,"%s, va lire un passage d'une chanson de Sheryfa Luna à une personne inconnue. Celui que tu veux. Ou bois $ gorgées",18,1
+,,"%s, va payer quelque chose à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, va demander à une personne inconnue de t'écrire un mot doux sur le bras. Ou bois $ gorgées",18,1
+,,"%s, va demander à une personne inconnue de te faire un dessin sur le front. Ou bois $ gorgées",18,1
+,,"%s, va demander à une personne inconnue de t'écrire des chiffres sur le bras, ça doit commencer par 06. Ou bois $ gorgées",18,1
+,,"%s, chaque joueur te dit un mot. Tu dois dire une ou plusieurs phrases qui contient ces mots à une personne inconnue. Ou bois $ gorgées",18,1
+,,"%s, choisis un sous-fifre à cette table. S'il réussit le défi que tu lui proposes tu pourras distribuer $ gorgées, sinon il (elle) les boira",19,1
+,,"%s, choisis un défi pour %s. $ gorgées en jeu, attention en cas d'échec vous boirez tous les deux",19,2
+,,"%s, choisis un défi pour %s, qui pourra distribuer $ gorgées en cas de réussite, ou boire $ gorgées en cas d'échec",19,2
+,,"%s, passe sous la table à 4 pattes ou bois $ gorgées",19,1
+,,"%s, laisse %s te mordre le cul ou bois $ gorgées",19,2
+,,"%s, mets une cacahuète ou une chips dans ton verre ou bois",19,1
+,,"%s, laisse %s mettre un peu d'autres verres dans le tien ou bois",19,2
+,,"%s, mets une de tes chaussettes sur la table ou bois",19,1
+,,"%s, mets une de tes chaussures sur la table ou bois",19,1
+,,"%s, mets toi pieds nus ou bois",19,1
+,,"%s, va aux toilettes et reviens avec le haut à l'envers, ou bois",19,1
+,,"%s, va aux chiottes en courant, en mettant une main sur tes fesses ou bois",19,1
+,,"%s, sors des chiottes avec une vilaine tache d'eau dans la zone pubienne, ou bois",19,1
+,,"%s, fais un moonwalk devant tout le monde ou bois",19,1
+,,"%s, sors des chiottes avec 3 feuilles de PQ qui dépassent du pantalon, ou bois",19,1
+,,"%s, sors des chiottes en disant au premier que tu croises ""Bonne chance au prochain"", ou bois",19,1
+,,"%s, va aux chiottes, interpelle une personne inconnue avant en lui disant ""Je vais faire un beau bordel"", ou bois",19,1
+,,"%s, va te mettre la raie des cheveux au milieu ou bois",19,1
+,,"%s, va mettre ton pantalon à l'envers ou bois",19,1
+,,"%s, prends toi une fessée par %s ou bois",19,2
+,,"%s, laisse ton numéro de téléphone et ton prénom sur un dessous de verre et laisse-le après le jeu. Si tu refuses tu bois",19,1
+,,"%s, dessine-toi des fausses lunettes ou bois",19,1
+,,"%s, laisse un mickey sur un dessous de verre ou bois",19,1
+,,"%s, si tu arrives à passer derrière le bar tu pourras distribuer $ gorgées, tu en bois $ sinon",19,1
+,,"%s, demande un bac à glaçons et tu feras boire quelqu'un, échappe-toi et bois",19,1
+,,"%s, mets un pied sur la table et tu feras boire quelqu'un, échappe-toi et tu boiras une gorgée",19,1
+,,"%s, trouve du rouge à lèvres, mets-en sur les lèvres en débordant, ou bois",19,1
+,,"%s, la prochaine fois que tu vas pisser, va dans le chiotte du sexe opposé et tu pourras distribuer $ gorgées",19,1
+,,"%s, fais le tour de la table et sens les cheveux de tous les joueurs, ou bois",19,1
+,,"%s, bois un shooter en utilisant un tampon propre : tu le trempes tel un biscuit suçable et tu aspires. Ou bois $ gorgées",19,1
+,,"%s, mets quelques postillons dans ton verre ou bois",19,1
+,,"%s, laisse %s lécher tout le tour de ton verre ou bois",19,2
+,,"%s, lèche la table ou bois",19,1
+,,"%s, prends toi une claque par %s ou bois",19,2
+,,"%s, allonge tes jambes en posant tes pieds sur une chaise jusqu'à ce qu'un serveur s'agace, ou bois $ gorgées",19,1
+,,"%s, mâche ton dessous de verre 30 secondes ou bois $ gorgées",19,1
+,,"%s, laisse %s te mettre un petit coup de maquillage ou bois",19,2
+,,"%s, mange un glaçon ou bois",19,1
+,,"%s, pousse un énorme cri façon Chewbacca de Star Wars ou bois",19,1
+,,"%s, fais des claquettes devant tout le monde ou bois",19,1
+,,"%s, rote fort ou bois. Ouais c'est dégueu mais c'est le jeu",19,1
+,,"%s, mets le dessous de verre dans ton verre ou bois",19,1
+,,"%s, fais-toi écrire ROUBIGNOLE sur le front au feutre. Ou bois $ gorgées",19,1
+,,"%s, fais-toi écrire TROUDUC sur le front au feutre. Ou bois $ gorgées",19,1
+,,"%s, laisse-toi dessiner des moustaches. Garde le chef-d'oeuvre jusqu'à la fin du jeu. Ou bois $ gorgées",19,1
+,,"%s, applaudis les deux bras en l'air 5 bonnes secondes. Ou bois $ gorgées",19,1
+,,"%s, chante une chanson à haute voix 10 bonnes secondes. Ou bois $ gorgées",19,1
+,,"%s, chante une chanson paillarde à haute voix pendant 10 secondes. Tu as 10 secondes pour trouver les paroles. Ou bois $ gorgées",19,1
+,,"%s, chante une chanson de Céline Dion à haute voix pendant 10 secondes. Tu as 10 secondes pour trouver les paroles. Ou bois $ gorgées",19,1
+,,"%s, renifle le cul de tous les joueurs, fais-toi remarquer au maximum. Ou bois $ gorgées",19,1
+,,"%s, défi libre ! Le groupe te propose un défi. Ou bois $ gorgées",19,1
+,,"%s, lance un objet rond vers un groupe d'inconnus et dis ""PIKACHU, ATTAQUE ÉCLAIR"". Ou bois $ gorgées",19,1
+,,"%s, fais de la capoeira devant un maximum d'audience. Ou bois $ gorgées",19,1
+,,"%s, fais une roulade. Ou bois $ gorgées",19,1
+,,"%s, fais un sprint sur 10m. Ou bois $ gorgées",19,1
+,,"%s, montre d'un bras tendu les personnes inconnues qui te plaisent. Ou bois $ gorgées",19,1
+,,"%s, fais semblant de tirer au pistolet les pigeons imaginaires pendant 15 secondes. N'oublie pas les bruits du fusil. Ou bois $ gorgées",19,1
+,,"%s, va faire un échauffement : montée de genoux, talons aux fesses, etc.. Ou bois $ gorgées",19,1
+,,"%s, fais 10 burpees (1 burpee = une pompe enchaînée avec un saut). Ou bois $ gorgées",19,1
+,,"%s, étale-toi de la terre sur la figure. Ou bois $ gorgées",19,1
+,,"%s, lève-toi et fais un doigt à une personne imaginaire. Ou bois $ gorgées",19,1
+,,"%s, monte sur ta moto imaginaire et va faire un petit tour. Ou bois $ gorgées",19,1
+,,"%s, monte sur ton kayak imaginaire et va faire un tour. Ou bois $ gorgées",19,1
+,,"%s, monte dans ton bus imaginaire et va faire un tour. N'hésite pas à proposer aux passants de monter à bord. Ou bois $ gorgées",19,1
+,,"%s, parcours le plus de distance possible en marche athlétique en 20 secondes. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et bats le record du monde du triple saut. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et bats le record du monde du saut à la perche imaginaire. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et bats le record du monde du saut en longueur. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et bats le record du monde du lancer du marteau imaginaire. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et bats le record du monde du lancer du javelot imaginaire. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et bats le record du monde du lancer du disque imaginaire. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et bats le record du monde du lancer du poids imaginaire. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe, et tape le pénalty de la gagne. La foule attend.... Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe, et bats le record de panier à 3 points imaginaire en 20 sec. Ou bois $ gorgées",19,1
+,,"%s, dans la peau de Djokovic. Écarte-toi du groupe, et travaille ton service imaginaire jusqu'à la fin du chrono. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe, lève une jambe, montre au public que tu forces, et dis ""ça va mieux"". Ou bois $ gorgées",19,1
+,,"%s, fais comme si tu t'énervais, et crie ""MAIS JE SUCE PAS QUE DES ANIMAUX"". Ou bois $ gorgées",19,1
+,,"%s, dis de façon assez forte (les groupes d'inconnus les plus proches doivent t'entendre) : ""... Et maintenant, tu sais pourquoi mes légumes sentent l'anus"". Ou bois $ gorgées",19,1
+,,"%s, dis de façon assez forte (les groupes d'inconnus les plus proches doivent t'entendre) : ""... C'était la dernière fois que j'ai fait un anulingus à un bouc"". Ou bois $ gorgées",19,1
+,,"%s, dis de façon assez forte (les groupes d'inconnus les plus proches doivent t'entendre) : ""... Et là, ils m'ont surpris en pleine masturbation anale"". Ou bois $ gorgées",19,1
+,,"%s, dis de façon assez forte (les groupes d'inconnus les plus proches doivent t'entendre) : ""... Ça me rappelle mes hémorroïdes y'a 3 semaines"". Ou bois $ gorgées",19,1
+,,"%s, dis de façon assez forte (les groupes d'inconnus les plus proches doivent t'entendre) : ""... J'ai rarement mis autant de choses dans son anus"". Ou bois $ gorgées",19,1
+,,"%s, dis de façon assez forte (les groupes d'inconnus les plus proches doivent t'entendre) : ""... Un peu plus et mon chat léchait le sperme"". Ou bois $ gorgées",19,1
+,,"%s, rapproche-toi de la foule, gratte-toi à l'intérieur du slip, et sens tes doigts. Ou bois $ gorgées",19,1
+,,"%s, place-toi à plat ventre, et tire sur les passants avec ton sniper imaginaire, pendant 20 secondes. Ou bois $ gorgées",19,1
+,,"%s, tourne en rond en claquant des doigts pendant 20 secondes. Ou bois $ gorgées",19,1
+,,"%s, va faire un tour, minimum 50m, de marche en canard rapide (marcher les fesses le plus près possible du sol). Ou bois $ gorgées",19,1
+,,"%s, va faire un tour en nageant. Tu peux choisir la nage. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et bats le record du monde de l'épaulé-jeté imaginaire (Haltérophilie) . Ou bois $ gorgées",19,1
+,,"%s, va te mouiller la totalité des cheveux et reviens. Ou bois $ gorgées",19,1
+,,"%s, va te faire une écharpe en papier toilette et reviens. Ou bois $ gorgées",19,1
+,,"%s, imite un saumon sorti de l'eau pendant 10 secondes. Ou bois $ gorgées",19,1
+,,"%s, va mettre tes sous-vêtements par dessus tes vêtements. Ou bois $ gorgées",19,1
+,,"%s, écarte-toi du groupe et fais le chien qui court après sa queue. Ou bois $ gorgées",19,1
+,,"%s, attache tes pieds entre eux comme tu peux et va faire un tour. Ou bois $ gorgées",19,1
+,,"%s, place-toi à l'écart, et tire sur les passants avec ton arc imaginaire. Ou bois $ gorgées",19,1
+,,"%s, garde quelque chose sur le visage jusqu'à la fin de la partie. Ou bois $ gorgées",19,1
+,,"%s, garde quelque chose sur la tête jusqu'à la fin de la partie. Ou bois $ gorgées",19,1
+,,"%s, crache par terre. Ou bois $ gorgées",19,1
+,,"%s, aboie, de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, meugle (cri de la vache), de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, grouine (cri du cochon), de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, barète (fais le cri de l'éléphant), de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, fais le cri du singe, de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, fais le cri de la baleine, de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, fais le cri de l'âne, de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, cancane (fais le cri du canard), de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, bêle (cri du mouton), de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, crie le premier mot qui te vient à l'esprit. Ou bois $ gorgées",19,1
+,,"%s, chaque joueur te dit un mot. Tu dois dire une ou plusieurs phrases qui contient ces mots, de sorte que les groupes d'inconnus les plus proches t'entendent. Ou bois $ gorgées",19,1
+,,"%s, crie le premier mot qui te vient à l'esprit, et qui rime avec ""NAR"". Ou bois $ gorgées",19,1
+,,"%s, crie le premier mot qui te vient à l'esprit, et qui rime avec ""ITE"". Ou bois $ gorgées",19,1
+,,"%s, crie le premier mot qui te vient à l'esprit, et qui rime avec ""NUSSE"". Ou bois $ gorgées",19,1
+,,"%s, crie le premier mot qui te vient à l'esprit, et qui rime avec ""NASSE"". Ou bois $ gorgées",19,1
+,,"%s, jette quelque chose à au moins 5m de toi, par dessus ton épaule. Ou bois $ gorgées",19,1
+,,"%s, trouve un type qui s'appelle Antoine ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Romain ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Nathan ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Valentin ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Clément ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Damien ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Laurent ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Stéphane ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Alan ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Jérôme ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve un type qui s'appelle Séraphin ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Géraldine ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Alicia ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Camille ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Jessica ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Justine ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Laura ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Marine ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Mathilde ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Margaux ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, trouve une fille qui s'appelle Maïlys ou bois. Tu as 3 chances, si tu réussis tu pourras distribuer $ gorgées",20,1
+,,"%s, marque ""choucroute"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""plug anal"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""phallus"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""furoncle"" sur ton front ou bois $ gorgées",21,1
+,,"%s, dessine-toi un mono sourcil ou bois $ gorgées",21,1
+,,"%s, marque ""trompette"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""vaseline"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""déchet"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""viagra"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""gastro"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""sexe anal"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""vierge"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""Ténia"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""cyprine"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""sperme"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""biscotte"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""kyste"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""poil pubien"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""coït buccal"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""en chaleur"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""tartine"" sur ton front ou bois $ gorgées",21,1
+,,"%s, marque ""slip"" sur ton front ou bois $ gorgées",21,1
+,,"%s, dessine une prostituée sur un cheval. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un mammouth qui chie un lémurien. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine une licorne lesbienne. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un pince-oreille gymnaste. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine une frite qui parle. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine une casserole qui pète. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un chien qui a la gastro. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un joint de culasse. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un bébé psychopathe. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un cafard en short. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un chippendale castré. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine Batman qui fait de la corde à sauter. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un hobbit qui court. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine une girafe qui vomit. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un bébé qui fait caca. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un pikachu femelle. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un singe qui se caresse. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine Iron Man en slip. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine le prépuce de François Hollande. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un CRS qui fait une levrette avec une grenouille. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un chat portant une capote. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine une chaise vivante. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un ours qui danse. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un oeuf qui téléphone. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un vampire qui se torche. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine une souris morte. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un crocodile qui éjacule. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine Pinocchio qui se suicide. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un renard bourré. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un lapin en skateboard. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine la Schtroumpfette à poil. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un lion gay. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un toboggan volant. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine une dinde farcie. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1
+,,"%s, dessine un cheval en érection. Fais deviner le dessin à une personne inconnue choisie par le groupe, si elle trouve tu peux distribuer $ gorgées, sinon tu bois",22,1

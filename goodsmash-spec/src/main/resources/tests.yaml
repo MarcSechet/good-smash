@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: Messaging API
+  title: Test API
   license:
     name: Poulet
 servers:
