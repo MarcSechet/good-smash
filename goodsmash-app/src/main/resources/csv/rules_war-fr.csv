@@ -1,0 +1,792 @@
+key,parent_key,text,type,nb_players
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le nom de famille maternel de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À 5 près, quel est le nombre de conquêtes de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À plus ou moins 1cm, quelle est la taille de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la ville de naissance de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le genre littéraire préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la partie du corps que %s regarde le plus en général ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est l'animal préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la pointure de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la saveur de crème glacée préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Où chante %s le plus souvent ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la main directrice de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la date de naissance de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le signe astrologique de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la bière préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la couleur préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est l'alcool préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le plat préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le dessert préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le prénom du ou de la dernière ex de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la saison préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est l'adresse (la rue) où habite %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la plus grosse qualité de %s selon lui / elle ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À 200g près, quel était le poids de %s à la naissance ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le jour préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le mois préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À quand remonte la dernière masturb*tion de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À quand remonte la dernière fois où %s est allé(e) au restaurant ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Est ce que %s préfère le salé ou le sucré ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Est ce que %s préfère le sirop de menthe ou de grenadine ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Est ce que %s préfère la pizza ou le kebab ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Est ce que %s préfère la sod*mie ou la pipe ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la marque de parfum préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quel est le bijou préféré de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la taille de maillot de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À quel âge %s a fait son premier bisou sur la bouche ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Où %s rêverait d'aller passer ses prochaines vacances ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Où est ce que %s a prévu de passer ses prochaines vacances ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la voiture préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle matière %s détestait le plus au collège ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est le pire des défauts de %s selon lui / elle ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Comment s'appelle la première personne avec qui %s est sorti ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Est ce que %s préfère les blond(e)s, les brun(e)s ou roux(sses) ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Qu'est ce que %s a mangé ce matin ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la couleur dominante des sous vêtements de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : %s préfère les glaces à la fraise ou au chocolat ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : %s préfère les burgers ou les pizzas ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la célébrité préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la radio préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est l'émission préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la position sexuelle préférée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À 30 minutes près, quelle est l'heure de la dernière douche de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : %s préfère les haricots ou les épinards ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : %s préfère les endives ou les cornichons ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À quand remonte la dernière soirée alcoolisée de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À un mois près, à quand remonte le dernier vomi de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : À quand remonte la dernière fois où %s a eu une relation sexuelle ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quand est ce que %s a pris de la drogue pour la dernière fois ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le sport préféré de %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Dans quelle langue %s aimerait être parfaitement bilingue ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Dans quel pays aimerait vivre %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quelle est la ville préférée de %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : À 2 près, combien de pays %s a visités ? ",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le dernier diplôme de %s ? ",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Combien de frères et sœurs a %s ? ",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est l'aspect physique que %s déteste le plus chez lui / elle ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est l'aspect physique que %s aime le plus chez lui / elle ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le trait mental que %s déteste le plus chez lui / elle ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le trait mental que %s aime le plus chez lui / elle ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Combien %s souhaiterait avoir d'enfants ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le deuxième prénom de %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le prochain pays que %s aimerait visiter ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le dernier livre lu par %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quand %s est allé(e) au cinéma pour la dernière fois ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le dernier film vu par %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le dernier film vu par %s au cinéma ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : A quand remonte la dernière fois où %s a fait crac-crac ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le prénom de la dernière personne dont %s a été amoureux(se) ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le prénom de la dernière personne avec qui %s a fait l'amour ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quelle est ou était la matière préférée de %s en cours ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quelle est la couleur du manteau de %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Qu'est ce que choisirait %s entre un plan à 3 et un week-end à Rome entre potes ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le fantasme sexuel réalisable de %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le pouvoir magique que %s aimerait avoir ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Dans quelle ville %s a fait son école primaire ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : À 0.5 près, quelle note %s a eu au bac ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Citez un aliment que %s déteste ",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel serait le métier de rêve pour %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : À quel âge %s a eu son premier sp*rme ou ses premières règles ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : À quel âge %s a eu sa première expérience sexuelle ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : À quel âge %s a eu sa première fois (avec pénétration) ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : À quel âge %s est sorti pour la première fois avec quelqu'un ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : À quel âge %s a pris l'avion pour la première fois ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : En combien de tentatives %s a eu son permis de conduire ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Combien de permis (chasse, poids lourd, moto, pêche, ...) possède %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quelle est la chanson préférée de %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : %s a eu un orgasme aujourd'hui ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : %s a déjà pris un rond point à l'envers ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est ce que %s a déjà passé 3 jours sans se laver ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est ce que %s a déjà envoyé quelqu'un à l'hôpital ?",8,1
+,,"Equipe %t, pendant 30 secondes à chaque fois que %s boit une gorgée vous en buvez tous une",8,1
+,,"Equipe %t, pendant 30 secondes à chaque fois que %s fait deux pompes vous buvez tous une gorgée",8,1
+,,"Equipe %t, posez une question à %s qui est obligé(e) de répondre ou qui doit finir son verre",8,1
+,,"Equipe %t, %s choisit quelque chose qu'il a déjà fait, si l'un de vous ne l'a jamais fait buvez tous $ gorgées",8,1
+,,"Equipe %t, %s choisit quelque chose qu'il n'a jamais fait, si l'un de vous l'a déjà fait buvez tous $ gorgées",8,1
+,,"Equipe %t, à tour de rôle désignez un objet rouge dans la pièce, tous les membres de l'équipe d'en face boiront une gorgée à chaque élément",8,0
+,,"Equipe %t, à tour de rôle donnez une des conquêtes de %s sans vous tromper, tous les membres de son équipe boiront une gorgée à chaque fois",8,1
+,,"Equipe %t, à tour de rôle citez un des acteurs de ""Le père Noël est une ordure"" sans vous tromper, tous les membres de l'équipe d'en face boiront une gorgée à chaque acteur",8,0
+,,"Equipe %t, à tour de rôle citez un des personnages de ""Sex and the city"" sans vous tromper, tous les membres de l'équipe d'en face boiront une gorgée à chaque personnage",8,0
+,,"Equipe %t, l'un de vous peut prêter son verre à %s qui en boira la moitié",8,1
+,,"Equipe %t, si vous arrivez à trouver 10 films dans lesquels Brad Pitt a joué, %s finit son verre, sinon vous buvez tous $ gorgées",8,1
+,,"Equipe %t, si vous arrivez à trouver 10 films dans lesquels Monica Bellucci a joué, %s finit son verre, sinon vous buvez tous $ gorgées",8,1
+,,"Equipe %t, désignez votre fée clochette. Elle pourra donner une gorgée chaque minute à n'importe qui jusqu'à la fin du jeu",8,1
+,,"Equipe %t, à tour de rôle citez une maladie que %s a eu sans vous tromper, tous les membres de l'équipe d'en face boiront une gorgée à chaque maladie (6 max)",8,1
+,,"Equipe %t, si l'un d'entre vous a déjà trompé son conjoint, l'équipe d'en face boit $ gorgées, autrement vous les buvez",8,0
+,,"Equipe %t, à tour de rôle citez une arme médiévale sans vous tromper, tous les membres de l'équipe d'en face boiront une gorgée à chaque arme (6 max)",8,0
+,,"Equipe %t, à tour de rôle faites un bruit avec une partie de votre corps (claques et fessées ne comptent pas). Pour chaque nouvelle partie l'équipe d'en face boit $ gorgées",8,0
+,,"Equipe %t, choisissez un de vos adversaires qui finira un des verres de son équipe",8,0
+,,"Equipe %t, si l'un des joueurs lèche le front d'un ou d'une partenaire à pleine langue l'équipe d'en face boit $ gorgées. Sinon vous buvez tous $ gorgées",8,0
+,,"Equipe %t, si l'un de vos joueurs caresse les fesses nues d'un ou d'une partenaire l'équipe d'en face boit $ gorgées. Sinon vous buvez tous $ gorgées",8,0
+,,"Equipe %t, si l'un de vos joueurs embrasse un ou une partenaire sur la bouche l'équipe d'en face boit $ gorgées. Sinon vous buvez tous $ gorgées",8,0
+,,"Prêts pour le sacrifice ? Equipe %t, si l'un de vous finit son verre l'équipe d'en face boit $ gorgées. Sinon vous buvez tous $ gorgées",8,0
+,,"Equipe %t, à tour de rôle citez un pays que %s a visité sans vous tromper, tous les membres de l'équipe d'en face boivent à chaque pays (6 max)",8,1
+,,"Equipe %t, à tour de rôle décrivez une des positions sexuelles que %s a pratiquées sans vous tromper, l'équipe d'en face boit une gorgée pour chaque (6 max)",8,1
+,,"Equipe %t, soit %s boit $ gorgées soit %s boit $ gorgées, à vous de décider",8,2
+,,"Prêts pour le sacrifice ? Equipe %t, si quelqu'un se met torse nu ou en soutif l'équipe d'en face boit $ gorgées, sinon vous les buvez",8,0
+,,"Équipe %t, vous décidez entre rajouter de l'alcool dans chaque verre de l'équipe d'en face, ou les faire boire $ gorgées",8,0
+,,"Équipe %t, chacun fait boire à l'adversaire de son choix une gorgée dans son propre verre",8,0
+,,"Equipe %t, chacun distribue une gorgée à l'adversaire de son choix",8,0
+,,"Equipe %t, chacun distribue deux gorgées à l'adversaire de son choix",8,0
+,,"Equipe %t, chacun distribue trois gorgées à l'adversaire de son choix",8,0
+,,"Equipe %t, buvez chacun une gorgée dans le verre d'un adversaire de votre choix",8,0
+,,"Equipe %t, buvez chacun deux gorgées dans le verre d'un adversaire de votre choix",8,0
+,,"Equipe %t, buvez chacun trois gorgées dans le verre d'un adversaire de votre choix",8,0
+,,"Équipe %t, donnez à tour de rôle un animal que %s a caressé sans vous tromper, l'équipe d'en face boit pour chaque animal (6 max)",8,1
+,,"Equipe %t, choisissez l'adversaire qui devra boire une gorgée dans chacun de vos verres",8,1
+,,"Equipe %t, choisissez l'adversaire qui devra boire une gorgée dans tous les verres",8,0
+,,"Équipe %t, donnez $ gorgées à l'un des joueurs de l'équipe d'en face",8,0
+,,"Equipe %t, enlevez tous un vêtement ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Equipe %t, laissez %s choisir le bizut de votre équipe qui finira son verre, ou buvez tous $ gorgées",8,1
+,,"Equipe %t, l'un de vous finit le verre d'un membre de l'équipe ou toute l'équipe boit $ gorgées",8,0
+,,"Equipe %t, si vous trouvez 5 des 7 péchés capitaux %s finit son verre, autrement buvez $ gorgées",8,1
+,,"Equipe %t, si vous trouvez 5 des 7 merveilles du monde %s finit son verre, autrement buvez $ gorgées",8,1
+,,"Equipe %t, trinquez ensemble !",8,0
+,,"Equipe %t, si vous arrivez à sortir au moins 50€ en liquide à vous tous, %s finit son verre, autrement buvez $ gorgées",8,1
+,,"Équipe %t, chacun boit une gorgée, %s en boit $",8,1
+,,"Équipe %t, choisissez qui doit finir son verre entre %s et %s",8,2
+,,"Équipe %t, choisissez qui doit boire $ gorgées entre %s et %s",8,2
+,,"Équipe %t, choisissez si %s doit boire $ gorgées ou si %s doit finir son verre",8,2
+,,"Equipe %t, si l'un de vous a déjà couché avec un membre de l'équipe d'en face vos adversaires boivent $ gorgées, autrement vous les buvez",8,0
+,,"Equipe %t, si l'un de vous a déjà fait des préliminaires avec un membre de l'équipe d'en face vos adversaires boivent $ gorgées, autrement vous les buvez",8,0
+,,"Equipe %t, si l'un de vous a déjà vu un membre de l'équipe d'en face tout nu vos adversaires boivent $ gorgées, autrement vous les buvez",8,0
+,,"Equipe %t, si l'un de vous est en couple avec un membre de l'équipe d'en face vos adversaires font CUL SEC ! Sinon vous buvez $ gorgées",8,0
+,,"Equipe %t, si l'un de vous a été (ou est) sexfriend avec un membre de l'équipe d'en face vos adversaires font CUL SEC ! Sinon vous buvez $ gorgées",8,0
+,,"Equipe %t, à tour de rôle distribuez des gorgées à l'un de vos adversaires. Le premier en donne 1, le second 2, etc.",8,0
+,,"Equipe %t, choisissez entre donner une gorgée à tous les joueurs d'en face ou $ à %s",8,1
+,,"Traîtres ou solidaires ? Equipe %t, laissez %s choisir le ou la plus débile de votre équipe qui boira $ gorgées, ou soyez solidaires et buvez tous $ gorgées",8,1
+,,"Traîtres ou solidaires ? Equipe %t, laissez %s choisir le/la moche de votre équipe qui boira $ gorgées, ou soyez solidaires et buvez tous $ gorgées",8,1
+,,"Traîtres ou solidaires ? Equipe %t, laissez %s choisir le ou la plus chiante de votre équipe qui boira $ gorgées, ou soyez solidaires et buvez tous $ gorgées",8,1
+,,"Equipe %t, soit vous balancez un dossier sur un de vos adversaires soit vous buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous choisissez entre laisser l'équipe d'en face balancer un dossier sur l'un de vous ou boire tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Equipe %t, laissez %s choisir le paratonnerre de votre équipe (qui sera le seul à boire pendant 3 minutes), ou buvez tous $ gorgées",8,1
+,,"Traîtres ou solidaires ? Equipe %t, laissez %s choisir l'un de vos membres qui devra se mettre torse nu ou en soutif ou buvez tous ensemble $ gorgées",8,1
+,,"Traîtres ou solidaires ? Équipe %t, vous choisissez entre attacher l'un de vos membres ou boire tous $ gorgées (scotch, corde, ...)",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous choisissez parmi vos adversaires qui va enlever un vêtement à qui, s'ils refusent toute leur équipe boit $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous choisissez entre livrer l'un de vous à l'équipe d'en face pour 6 fessées ou boire tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous choisissez entre livrer l'un de vous à l'équipe d'en face pour 3 claques ou boire tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous choisissez entre livrer l'un de vous à l'équipe d'en face pour 3 coups de poing à l'épaule ou boire tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous choisissez entre livrer l'un de vous à l'équipe d'en face pour 5 tirages de poil ou boire tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le joueur le moins bavard (depuis le début de la partie) d'entre vous boire $ gorgées ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le joueur le plus bavard (depuis le début de la partie) d'entre vous boire $ gorgées ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous élisez le plus radin d'entre vous qui devra boire $ gorgées ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le dernier d'entre vous à avoir tiré son coup boire 5 gorgées, ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le dernier joueur à être allé aux toilettes parmi vous finir son verre ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le dernier joueur arrivé à la soirée parmi vous finir son verre ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le plus jeune joueur d'entre vous finir son verre ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le plus vieux joueur d'entre vous finir son verre ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le plus léger joueur d'entre vous finir son verre ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous élisez la sous-merde d'entre vous qui se fera insulter sans rien dire par l'équipe d'en face pendant 10 minutes ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous élisez Bernardo parmi vous qui fermera sa bouche pendant 5 minutes, ou buvez tous $ gorgées",8,0
+,,"Equipe %t, si vous arrivez à trouver 10 bars ambiancés du coin (à moins de 10 bornes) %s finit son verre, autrement vous buvez $ gorgées",8,1
+,,"Equipe %t, si vous arrivez à trouver 8 boîtes de nuit du coin (à moins de 10 bornes) %s finit son verre, autrement vous buvez $ gorgées",8,1
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le dernier joueur d'entre vous à avoir fait du sport finir son verre ou buvez tous $ gorgées",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le dernier joueur d'entre vous à avoir consulté son portable finir son verre ou buvez tous $ gorgées",8,0
+,,"Équipe %t, montrez des photos compromettantes de n'importe quel joueur, l'équipe d'en face boit à chaque photo (6 photos max)",8,0
+,,"Traîtres ou solidaires ? Équipe %t, vous laissez le ou la plus insociable d'entre vous finir son verre (le moins d'amis sur FB) ou buvez tous $ gorgées",8,0
+,,"Equipe %t, soit %s embrasse l'un d'entre vous sur la bouche soit vous buvez tous $ gorgées",8,1
+,,"Equipe %t, soit %s (mode actif) mime une levrette avec l'un d'entre vous (mode passif) soit vous buvez tous $ gorgées",8,1
+,,"Équipe %t, vous décidez, soit %s chante un refrain de maître Gims, soit vos adversaires boivent $ gorgées (il ou elle peut quand même refuser et faire un cul sec)",8,1
+,,"Traîtres ou solidaires ? Equipe %t, laissez %s choisir le plus lent d'entre vous qui finira son verre ou buvez tous $ gorgées",8,1
+,,"Equipe %t, à tour de rôle, crachez dans votre verre ou buvez $ gorgées, à vous de voir",8,0
+,,"Equipe %t, à tour de rôle, sniffez un peu de votre verre ou buvez $ gorgées, à vous de voir",8,0
+,,"Traîtres ou solidaires ? Equipe %t, à tour de rôle et de gauche à droite, buvez $ gorgées ou donnez les à votre équipier de gauche",8,0
+,,"Traîtres ou solidaires ? Equipe %t, à tour de rôle et de droite à gauche, buvez $ gorgées ou donnez les à votre équipier de droite",8,0
+,,"Equipe %t, à tour de rôle distribuez des gorgées à l'un de vos adversaires. Chacun a le choix entre 1 et 4 gorgées.",8,0
+,,"Équipe %t, question avec $ gorgées en jeu : Donnez deux prénoms des membres de la famille de %s ?",8,1
+,,"Équipe %t, question avec $ gorgées en jeu : Quelle est la pizza préférée de %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Où %s est allé(e) pour la dernière fois en vacances ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quand est-ce que %s est parti(e) pour la dernière fois en vacances ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quand est-ce que %s est allé(e) pour la dernière fois au cinéma ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le trait mental que %s déteste le plus chez les autres ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le trait mental que %s aime le plus chez les autres ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est la dernière partie du corps que %s s'est blessée ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est la dernière appli téléchargée par %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quand est-ce que %s a mangé un fast-food pour la dernière fois ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le dernier achat (matériel) effectué par %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est le quartier dans lequel travaille ou étudie %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Quel est l'intitulé exact du travail ou des études de %s ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà pleuré en lisant un livre ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà acheté un sex toy ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà pété en faisant l'amour ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s préfère les films fantastiques ou romantiques ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s préfère le café ou le thé ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà largué plus de deux personnes ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s s'est déjà fait(e) larguer plus de deux fois ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s préfère avoir un chien ou un chat ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà pris des photos érotiques pour sa (son) partenaire ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà dit ""je t'aime"" sans le penser ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà regretté de coucher avec quelqu'un ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : À quel âge %s a eu son permis de conduire ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà couché avec quelqu'un par une appli de rencontre ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà fait un tour en montgolfière ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà fait une partie d'Airsoft ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà fait une partie de paintball ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà fait 2 parties ou plus de laser game ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà eu un article sur lui dans un journal ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà redoublé ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s préfère faire l'amour le matin ou le soir ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà eu des vues sur son beau-frère ou sa belle-soeur ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà été précoce lors d'un rapport sexuel ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a l'habitude de plutôt regarder les infos ou la télé-réalité ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà prêté plus de 50 euro à un ami ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà pris de la drogue de synthèse ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà fait du naturisme ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà reçu la police pour tapage nocturne ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà eu un accident de voiture ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s croit au destin ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a eu, par le passé, une relation amoureuse plus longue que 6 mois ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a eu, par le passé, une relation amoureuse plus courte qu'un mois ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà eu une relation sexuelle avec l'ex d'un(e) ami(e) ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s aime percer ses boutons ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s pue des pieds ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà eu un trou noir à cause de l'alcool ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Est-ce que %s a déjà fait caca en pleine nature ?",8,1
+,,"Equipe %t, question avec $ gorgées en jeu : Qu'est-ce que %s sait faire de mieux en cuisine ?",8,1
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Chat"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Violet"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Rouge"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Enfant"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Amour"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Dur"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Tintin"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Super héros"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Whisky"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Zut"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Fesse"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Coup"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Singe"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Cuisine"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Rue"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Clair"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Sortir"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Alcool"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Table"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Trou"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Beau"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Dessert"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Shampoing"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Sport"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Bijou"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Ménage"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Plante"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""École"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Poubelle"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Nez"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Président"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Dieu"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Arc"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Superman"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Fruit"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Légume"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Voiture"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Météo"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Bâtiment"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Chasse"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Poisson"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Dinosaure"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Pêche"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Lumière"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Coquin"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Cochon"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Ministre"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Tramway"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Paris"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Asie"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Afrique"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Europe"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Océan"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Mer"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Maladie"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Injection"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""MST"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Vêtement"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Coupe de cheveux"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Instrument"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Ringard"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Sexy"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Sexe"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""trou du ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Suce ma ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Suce mon ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""N*que ta ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Ramasse tes ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Va chercher ton ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Il fait ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Ça me ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Je m'en ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""C'est très ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Ça fait ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Comme elle est ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Je vais le ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""C'est une sacrée ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Va dans ton ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Je vais à la ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Je vais aux ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Va dans ta ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Oublie tes ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Oublie pas ton ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Oublie pas ta ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""J'aime quand ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""J'aime la ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""C'est à quel ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Prends ton ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Prends ta ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""T'es trop ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Je mangerais bien ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Je mangerais bien une ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""C'est quoi ce ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Je m'en vais à ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Tu veux me ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""J'adore les ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Prends le par le ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Va à ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Change pas de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""C'est la fin ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""J'ai envie de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Il pue ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Arrête de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Arrête la ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Change de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""La boule à ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Gagner ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""C'est la ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""J'ai mal à ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Couper la ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Acheter un ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Vendre un ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Acheter une ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Vendre une ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Prendre sa ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Fais moi ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Retourne chez ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Mariage"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Couple"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Célibat"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Schtroumpf"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Arrête de te ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Bébé"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Chéri"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Coucher le ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Stylo"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Partie de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Piste de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Hiver"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Été"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Automne"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Printemps"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Presse les ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Secoue ton ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Drogue"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Homer Simpson"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Partir en ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Sortir les ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Couleur"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Legolas"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Cougar"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Guerre des ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Lady Gaga"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Se faire une ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Choucroute"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Femme"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Un billet de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Sacrée pair de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Finir sur son ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Pan! Dans sa ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Concours de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Mort aux ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Il a encore ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Sauce"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Le caca c'est ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Salade de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Rien à foutre des ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Puberté"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Coucher"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Traverser la ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Four à ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Garage à ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Tempête de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Exam de ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Diplômé en ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Ouvrir sa ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Ouvrir son ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Tout connaître sur ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Mentir sur ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Se couper la ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Vaisselle"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Dans ma poche j'ai un ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Fêter la ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Paye ta ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Trier les ..."". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Terrasse"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Magazine"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Framboise"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Selfie"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""Pendule"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""blague"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""voisin"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""palace"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"Équipe %t, énoncez en même temps le mot qui vous vient à l'esprit quand vous entendez ""acupuncteur"". Vous gagnez si deux mots sont identiques ! $ gorgées en jeu",9,0
+,,"%s et %s représentent leur équipe dans un combat de blabla ! Le joueur qui tiendra le plus longtemps à dire ""bla-bla-bla-..."" sans reprendre son souffle fera gagner son équipe ! $ gorgées en jeu",10,2
+,,%s et %s représentent leur équipe dans un combat de chifoumi (pierre / papier / ciseaux) ! $ gorgées en jeu,10,2
+,,%s et %s représentent leur équipe dans un combat de pouce ! $ gorgées en jeu,10,2
+,,%s et %s représentent leur équipe dans un combat de bras de fer ! $ gorgées en jeu,10,2
+,,"%s et %s représentent leur équipe dans un combat de pompes, le joueur qui en fera le plus fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe dans un défi d'étirement des jambes, le joueur qui ira le plus loin fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui a le plus d'argent liquide sur lui fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui sortira une crotte de nez en premier fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe dans un combat de rapidité, le joueur qui touchera un objet blanc en premier fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui touchera le coude de l'autre en premier fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui se rapprochera au plus près de son nez avec sa langue fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui finira son verre en premier fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui donnera le plus de noms de fruit pour l'un et de légume pour l'autre en 10 secondes fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui donnera le plus de prénoms de fille pour l'un et de mec pour l'autre en 10 secondes fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui a les plus gros biceps fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui a les plus grands pieds fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui touchera les pieds de l'autre en premier fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le premier joueur à faire un bisou à un des joueurs fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, celui ou celle qui léchera en premier tous les membres de son équipe la fera gagner ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, celui ou celle qui enlèvera le plus de vêtements fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui se mettra la plus grosse claque fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui s'arrachera le plus de poils d'un seul coup fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui a pissé en dernier fera perdre son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui sourira en premier fera perdre son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le ou la première à faire une léchouille à %s fera gagner son équipe ! $ gorgées en jeu",10,3
+,,"%s et %s représentent leur équipe, le joueur qui fera le plus de pompes sur une main fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui rotera le plus fort fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui rotera le plus longtemps fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, celui ou celle qui fera la plus belle photo du groupe (une seule chance) fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, celui ou celle qui imitera le mieux une fellati** fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui fera la meilleure blague fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le joueur qui fera la blague la plus pourrie fera gagner son équipe ! $ gorgées en jeu",10,2
+,,"%s et %s représentent leur équipe, le dernier joueur à avoir pissé autre part que dans des toilettes fera gagner son équipe ! $ gorgées en jeu",10,2
+champion-sport,,"Chacune des équipes choisit son champion en sport. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-sport,"Le champion qui donnera le plus de sports aquatiques fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-sport,"Le champion qui donnera le plus de handballeurs professionnels fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-sport,"Le champion qui donnera le plus de cyclistes professionnels fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-sport,"Le champion qui donnera le plus de ""contests"" redbull fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-stretching,,"Chacune des équipes choisit son joueur le plus souple. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-stretching,Le champion étant le plus souple au niveau des jambes fera gagner son équipe !,11,0
+,champion-stretching,"Le champion le plus souple des épaules fera gagner son équipe ! Passez les deux mains dans le dos, une depuis le haut une depuis le bas et allez chercher le plus loin possible",11,0
+,champion-stretching,Le champion avec le plus grand grand-écart fera gagner son équipe !,11,0
+champion-anatomy,,"Chacune des équipes choisit son champion en anatomie. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-anatomy,"Le champion qui donnera le plus d'os du corps humain fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-anatomy,"Le champion qui donnera le plus de muscles du corps humain fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-anatomy,"Le champion qui donnera le plus d'organes du corps humain fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-sexology,,"Chacune des équipes choisit son joueur le plus coquin. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-sexology,"Le champion qui donnera le plus de zones érogènes chez la femme fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-sexology,"Le champion qui mimera le plus de positions sexuelles fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-sexology,"Le champion qui mimera le plus de pratiques sexuelles (ex : fellati**) fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-cooking,,"Chacune des équipes choisit son champion en gastronomie. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-cooking,Le champion qui donnera le plus de noms de pâte fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !,11,0
+,champion-cooking,Le champion qui donnera le plus de pâtisseries fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !,11,0
+,champion-cooking,"Le champion qui donnera le plus de noms de salade fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-comic,,"Chacune des équipes choisit son champion en bande dessinée. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-comic,"Le champion qui donnera le plus d'albums de Tintin fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-comic,"Le champion qui donnera le plus d'albums d'Astérix fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-comic,"Le champion qui donnera le plus de noms de BD fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-cartoon,,"Chacune des équipes choisit son champion en dessin animé. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-cartoon,"Le champion qui donnera le plus de films en dessins animés fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-cartoon,"Le champion qui donnera le plus de personnages de dessin animé méchants fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-cartoon,"Le champion qui donnera le plus de noms de manga fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-pokémon,,"Chacune des équipes choisit son maître en pokémon. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-pokémon,"Le champion qui donnera le plus de pokémons type roche fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-pokémon,"Le champion qui donnera le plus de pokémons type eau fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-pokémon,"Le champion qui donnera le plus d'attaques de Pikachu fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-pokémon,"Le champion qui donnera le plus d'attaques de Dracaufeu fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-medecine,,"Chacune des équipes choisit son champion en médecine. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-medecine,"Le champion qui donnera le plus de médicaments fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-medecine,"Le champion qui donnera le plus de métier dans la médecine fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-medecine,"Le champion qui donnera le plus de MST fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-poem,,"Chacune des équipes choisit son plus grand poète. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-poem,"Le champion qui donnera le plus de rimes en ouille fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-poem,"Le champion qui donnera le plus de rimes en nar fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-poem,"Le champion qui donnera le plus d'expressions signifiant ""sod*miser"" fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-poem,"Le champion qui donnera le plus d'expressions signifiant ""se mastur*er"" fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-music,,"Chacune des équipes choisit son champion question musique. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-music,"Le champion qui donnera le plus de tubes de David Guetta fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-music,"Le champion qui donnera le plus de tubes des Daft Punk fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-music,"Le champion qui donnera le plus de groupes de rock fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-music,"Le champion qui donnera le plus de comédies musicales fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-friend,,"Chacune des équipes choisit celui ou celle qui connaît le mieux %s, il/elle ne peut être choisi(e). $ gorgées en jeu. Champions, attendez la suite ...",11,1
+,champion-friend,"Le champion qui donnera le plus d'endroits où %s a vomi fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,1
+,champion-friend,"Le champion qui donnera le plus d'endroits où %s a pété fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,1
+,champion-friend,"Le champion qui donnera le plus d'endroits où %s a pissé fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,1
+,champion-friend,"Le champion qui donnera le plus d'ex de %s fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,1
+champion-langage,,"Chacune des équipes choisit son champion en langue française. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-langage,"Le champion qui donnera le plus de gros mots fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-langage,"Le champion qui donnera le plus de mots de la haute bourgeoisie (ex : saperlipopette) fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-langage,"Le champion qui donnera le plus de noms d'écrivains fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-maths,,"Chacune des équipes choisit son champion en maths. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-maths,Le champion qui ira le plus loin en comptant 7 par 7 en partant de zéro en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence !,11,0
+,champion-maths,"A tour de rôle, chaque champion énonce un nom de théorème de Mathématicien. Celui de l'équipe %t commence. Celui qui se trompe fait perdre son équipe !",11,0
+,champion-maths,Le champion qui donnera le plus de touches d'une calculatrice fera gagner son équipe ! Celui de l'équipe %t commence !,11,0
+,champion-maths,Le champion qui donnera le plus d'éléments dans un cercle fera gagner son équipe ! Celui de l'équipe %t commence !,11,0
+,champion-maths,Le champion qui donnera le plus de nombres premiers fera gagner son équipe ! Celui de l'équipe %t commence !,11,0
+champion-beautician,,"Chacune des équipes choisit sa championne esthéticienne. $ gorgées en jeu. Championnes, attendez la suite ...",11,0
+,champion-beautician,La championne qui s'arrachera le plus de poils/cheveux d'un seul coup fera gagner son équipe !,11,0
+,champion-beautician,La championne qui arrachera le plus de poils/cheveux d'un seul coup à un membre de son équipe fera gagner son équipe !,11,0
+,champion-beautician,La championne qui s'arrachera le poil le plus long fera gagner son équipe !,11,0
+champion-art,,"Chacune des équipes choisit son champion en art. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-art,Le champion qui mettra le moins de temps à faire deviner en dessinant un animal choisi par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-art,Le champion qui mettra le moins de temps à faire deviner en dessinant une célébrité vivante choisie par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-art,Le champion qui mettra le moins de temps à faire deviner en dessinant une célébrité décédée choisie par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-art,Le champion qui mettra le moins de temps à faire deviner en dessinant une position sexuelle choisie par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-art,Le champion qui mettra le moins de temps à faire deviner en dessinant un objet choisi par l'équipe d'en face fera gagner son équipe !,11,0
+champion-memory,,"Chacune des équipes choisit son champion en mémoire. $ gorgées en jeu. Champions, FERMEZ LES YEUX et attendez la suite ...",11,0
+,champion-memory,"A tour de rôle, chaque champion énonce la couleur des yeux d'un joueur (ex : ""Camille, bleus""). Celui de l'équipe %t commence, le premier qui se trompe fait perdre son équipe",11,0
+,champion-memory,"A tour de rôle, chaque champion énonce une couleur de chaussures parmi les joueurs (ex : ""Camille, bleus""). Celui de l'équipe %t commence, le premier qui se trompe fait perdre son équipe",11,0
+,champion-memory,"A tour de rôle, chaque champion énonce une couleur de T-shirt / haut parmi les joueurs (ex : ""Camille, bleus""). Celui de l'équipe %t commence, le premier qui se trompe fait perdre son équipe",11,0
+,champion-memory,"A tour de rôle, chaque champion énonce une couleur de pantalon / bas parmi les joueurs (ex : ""Camille, bleus""). Celui de l'équipe %t commence, le premier qui se trompe fait perdre son équipe",11,0
+,champion-memory,"A tour de rôle, chaque champion énonce un objet blanc dans la pièce sans répéter ce qui a été dit. Celui de l'équipe %t commence, le premier qui se trompe fait perdre son équipe",11,0
+,champion-memory,"A tour de rôle, chaque champion énonce un objet noir dans la pièce sans répéter ce qui a été dit. Celui de l'équipe %t commence, le premier qui se trompe fait perdre son équipe",11,0
+champion-spelling,,"Chacune des équipes choisit son champion en orthographe. $ gorgées en jeu. Champions, ne regardez pas l'écran et attendez la suite ...",11,0
+,champion-spelling,"A tour de rôle, les champions vont épeler à l'envers en donnant une seule lettre chacun le mot ""myélosaccoradiculographie"". Celui de l'équipe %t commence, celui qui se trompe fait perdre son équipe !",11,0
+,champion-spelling,"A tour de rôle, les champions vont épeler à l'envers en donnant une seule lettre chacun le mot ""oligoasthénotératospermie"". Celui de l'équipe %t commence, celui qui se trompe fait perdre son équipe !",11,0
+,champion-spelling,"A tour de rôle, les champions vont épeler à l'envers en donnant une seule lettre chacun le mot ""pseudohypoparathyroïdisme"". Celui de l'équipe %t commence, celui qui se trompe fait perdre son équipe !",11,0
+,champion-spelling,"A tour de rôle, les champions vont épeler à l'envers en donnant une seule lettre chacun le mot ""cyclopentanoperhydrophénanthrène"". Celui qui se trompe fait perdre son équipe !",11,0
+,champion-spelling,"A tour de rôle, les champions vont épeler à l'envers en donnant une seule lettre chacun le mot ""anticonstitutionnellement"". Celui de l'équipe %t commence, celui qui se trompe fait perdre son équipe !",11,0
+champion-serie-friends,,"Chacune des équipes choisit son expert de la série FRIENDS. $ gorgées en jeu. Champions, ne regardez pas l'écran et attendez la suite ...",11,0
+,champion-serie-friends,"A tour de rôle, les champions vont donner un des mecs avec qui Rachel est sortie. Dès qu'un champion se trompe il fait perdre son équipe ! Celui de l'équipe %t commence",11,0
+,champion-serie-friends,"A tour de rôle, les champions vont donner un des mecs avec qui Monica est sortie. Dès qu'un champion se trompe il fait perdre son équipe ! Celui de l'équipe %t commence",11,0
+,champion-serie-friends,"A tour de rôle, les champions vont donner une des filles avec qui Chandler est sorti. Dès qu'un champion se trompe il fait perdre son équipe ! Celui de l'équipe %t commence",11,0
+,champion-serie-friends,"A tour de rôle, les champions vont donner une des filles avec qui Ross est sorti. Dès qu'un champion se trompe il fait perdre son équipe ! Celui de l'équipe %t commence",11,0
+,champion-serie-friends,"A tour de rôle, les champions vont donner une des filles avec qui Joey est sorti. Dès qu'un champion se trompe il fait perdre son équipe ! Celui de l'équipe %t commence",11,0
+champion-geo,,"Chacune des équipes choisit son champion en géographie. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-geo,"Le champion qui donnera le plus de capitales européennes fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-geo,"Le champion qui donnera le plus de départements français en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-geo,"Le champion qui donnera le plus de capitales hors Europe en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-geo,"Le champion qui donnera le plus de mers et océans en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-geo,"Le champion qui donnera le plus de pays d'Afrique en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-geo,"Le champion qui donnera le plus de pays d'Asie en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-geo,"Le champion qui donnera le plus de stations de ski en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-geo,"Le champion qui donnera le plus de régions françaises en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-silly,,"Chacune des équipes choisit son champion en débilité. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-silly,Le champion qui fera le plus de pets d'aisselle en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence,11,0
+,champion-silly,Le champion qui fera le plus de rots en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence,11,0
+,champion-silly,Le champion qui se mettra le plus de baffes en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence,11,0
+,champion-silly,Le champion qui fera le plus de tour sur lui-même en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence,11,0
+,champion-silly,"Le champion qui donnera le plus de coins à prostituées dans cette ville fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-imitate,,"Chacune des équipes choisit son champion en mime. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-imitate,Le champion qui mettra le moins de temps à faire deviner un animal choisi par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-imitate,Le champion qui mettra le moins de temps à faire deviner une célébrité vivante choisie par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-imitate,Le champion qui mettra le moins de temps à faire deviner une célébrité décédée choisie par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-imitate,Le champion qui mettra le moins de temps à faire deviner un héros de film choisi par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-imitate,Le champion qui mettra le moins de temps à faire deviner un sport choisi par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-imitate,Le champion qui mettra le moins de temps à faire deviner un truc qu'on trouve dans une salle de bain choisi par l'équipe d'en face fera gagner son équipe !,11,0
+champion-wistle,,"Chacune des équipes choisit son meilleur siffleur. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-wistle,Le champion qui mettra le moins de temps à faire deviner une chanson des années 90 choisie par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-wistle,Le champion qui mettra le moins de temps à faire deviner une chanson de reggae choisie par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-wistle,Le champion qui mettra le moins de temps à faire deviner un tube qu'on a tous envie d'oublier choisi par l'équipe d'en face fera gagner son équipe !,11,0
+,champion-wistle,Le champion qui mettra le moins de temps à faire deviner une chanson de slow choisie par l'équipe d'en face fera gagner son équipe !,11,0
+champion-movie,,"Chacune des équipes choisit son champion en cinéma. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-movie,"Le champion qui sortira le plus de films avec Vin Diesel fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-movie,"Le champion qui sortira le plus de films fantastiques fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-movie,"Le champion qui sortira le plus de films de science fiction fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-movie,"Le champion qui sortira le plus de parodies de film fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-movie,"Le champion qui sortira le plus de X-men méchants fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-tv,,"Chacune des équipes choisit son champion catégorie ""séries télévisées"". $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-tv,"Le champion qui donnera le plus de personnages de la série ""Malcolm"" en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !",11,0
+,champion-tv,Le champion qui donnera le plus de séries françaises en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !,11,0
+,champion-tv,"Le champion qui donnera le plus de personnages de la série ""Grey's Anatomy"" en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !",11,0
+,champion-tv,"Le champion qui donnera le plus de personnages de la série ""Plus belle la vie"" en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !",11,0
+,champion-tv,"Le champion qui donnera le plus de personnages de la série ""Friends"" en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !",11,0
+champion-video-game,,"Chacune des équipes choisit son champion en jeux vidéo. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-video-game,"Le champion qui donnera le plus de jeux de guerre fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-video-game,"Le champion qui donnera le plus de jeux de course fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-video-game,"Le champion qui donnera le plus de jeux en FPS fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-video-game,"Le champion qui donnera le plus de consoles de jeu fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-history,,"Chacune des équipes choisit son champion en histoire. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-history,"Le champion qui donnera le plus de présidents français fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-history,"Le champion qui donnera le plus de guerres historiques fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-history,"Le champion qui donnera le plus de rois étrangers fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-history,"Le champion qui donnera le plus de pays dans le camp de l'Axe pendant la 2nde Guerre Mondiale fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-history,"Le champion qui donnera le plus de pays dans le camp des Alliés pendant la 2nde Guerre Mondiale fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-new-tech,,"Chacune des équipes choisit son champion en nouvelles technologies. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-new-tech,Le champion qui écrira le texto le plus sensé et le plus long à la personne de son choix sans regarder son clavier fera gagner son équipe !,11,0
+,champion-new-tech,"Le champion qui énoncera le plus de modèles de téléphone portable fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-new-tech,"Le champion qui sortira le plus de composants d'un ordinateur fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-new-tech,"Le champion qui sortira le plus d'équipements numériques d'une voiture fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-new-tech,"Le champion qui sortira le plus d'objets connectés fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-ecology,,"Chacune des équipes choisit son champion en écologie. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-ecology,"Le champion qui énoncera le plus d'espèces d'arbres fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-ecology,"Le champion qui énoncera le plus de trucs qui polluent fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-ecology,"Le champion qui énoncera le plus de couches de l'atmosphère fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-ecology,"Le champion qui énoncera le plus de politiciens qui se disent ""écologistes"" fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-biology,,"Chacune des équipes choisit son champion en biologie. $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-biology,"Le champion qui énoncera le plus d'animaux marins fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-biology,Le champion qui énoncera le plus d'animaux terrestres en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !,11,0
+,champion-biology,"Le champion qui énoncera le plus d'espèces d'oiseau fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+,champion-biology,Le champion qui énoncera le plus d'animaux terrestres en 10 secondes fera gagner son équipe ! Celui de l'équipe %t commence pendant que l'autre se fait boucher les oreilles !,11,0
+,champion-biology,"Le champion qui énoncera le plus de noms de plante fera gagner son équipe ! Celui de l'équipe %t commence, triche interdite !",11,0
+champion-numbersnletters,,"Chacune des équipes choisit son champion en ""des chiffres et des lettres"". $ gorgées en jeu. Champions, attendez la suite ...",11,0
+,champion-numbersnletters,Le premier champion à donner un mot de 5 lettres contenant la lettre A fait gagner son équipe !,11,0
+,champion-numbersnletters,Le premier champion à donner un mot de 5 lettres contenant la lettre M fait gagner son équipe !,11,0
+,champion-numbersnletters,Le premier champion à donner un mot de 5 lettres contenant la lettre D fait gagner son équipe !,11,0
+,champion-numbersnletters,Le premier champion à donner un mot de 5 lettres contenant la lettre G fait gagner son équipe !,11,0
+,champion-numbersnletters,Le premier champion à donner un mot de 5 lettres contenant la lettre C fait gagner son équipe !,11,0
+,champion-numbersnletters,Le premier champion à donner le résultat de 17x3 fera gagner son équipe !,11,0
+,champion-numbersnletters,Le premier champion à donner le résultat de (27-4)x3 fera gagner son équipe !,11,0
+,champion-numbersnletters,Le premier champion à donner le résultat de 117-19 fera gagner son équipe !,11,0
+,champion-numbersnletters,Le premier champion à donner le résultat de 31x11 fera gagner son équipe !,11,0
+,,"$ gorgées en jeu : ""les sorts d’Harry Potter"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les viandes qu'on fait cuire au barbecue"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les dictateurs vivants ou morts"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les rois de France"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les miss France"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les états des États Unis d'Amérique"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les groupes de rock avec au moins un des membres morts"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les races de chien"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les fruits qui commencent par la lettre P"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les légumes"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les races de chats"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les félins"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les animaux qui pondent des œufs"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les chansons du groupe Téléphone"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les pays où les problèmes de particuliers à particuliers se règlent à la machette"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les races de poisson"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les ustensiles sur un couteau suisse"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les sports collectifs"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les sports individuels"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les jeux vidéo de sport"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les consoles de jeux"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les ministres français actuels"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les constructeurs de téléphone portable"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les enseignes de prêt à porter"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les instruments à vent"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les maladies sexuellement transmissibles"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les chroniqueurs de Touche pas à mon poste"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les pièces de bœuf"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les vêtements"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les personnages dans dragon ball Z"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""la couleur des télétubies"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les jeux avec un jeu de carte"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les jeux d'alcool"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les collections de cartes de jeux (Pokémon, Magic, ...)"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les prénoms mixtes"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les repas d'after soirée"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les insultes faisant état d'un coït (ex : nique ta ...)"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les qualificatifs pour un postérieur (ex : fesses 'molles')"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les synonymes de coup de poing"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les marques de vodka"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les marques de whisky"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les marques de rhum"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les marques de bière"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les synonymes de fesses"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les humoristes français"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les touches d'une télécommande"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les chansons paillardes"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les goûts mister freeze"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les coupes de cheveux"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les pokémons de type feu"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films / séries avec des zombies"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films sur la fin du monde"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les persos de la famille Adams"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec des animaux qui parlent"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les choses auxquelles on ne croit plus vers 10 ans"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les déguisements d'Halloween"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les points faibles d'un vampire"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les titres Tintin"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les genres de pâtes"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les plats à base de pomme de terre"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les constellations"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les objets clichés de la France et des Français"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les répliques du film 'les visiteurs'"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les répliques du film 'Dikkenek'"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les métiers de la nuit"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les comportements de beauf"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les parfums de glace"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les marques de dentifrice"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les slogans publicitaires"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les persos de Game of Thrones"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les armes d'un policier / gendarme"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les personnes homosexuelles ou bisexuelles célèbres"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les jeux dans une cours de récréation"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films de guerre"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les personnes célèbres qui ont des photos de nu qui traînent ou ont traîné sur le net"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""ce qui est interdit dans les règles du football"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""ce qui est interdit dans les règles du rugby"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""ce qui est interdit dans les règles du handball"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""ce qui est interdit dans les règles du basketball"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les actes de galanterie"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les people français qui ont tenté la chanson"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les plats asiatiques"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec Brad Pitt"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec Gérard Depardieu"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec Angelina Jolie"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec Matt Damon"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec Kad Merad"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec Jean Dujardin"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec Denzel Washington"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films avec Nicolas Cage"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les anges de la télé-réalité"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les aliments à fort potentiel flatulique (qui font péter)"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les repas qui font faire des cacas pas top top"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les persos de Buffy contre les vampires"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les persos de Stargate SG1"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les séries où t'as un détective qui résout toutes les affaires à chaque fois"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les pédophiles célèbres"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les tâches chiantes à faire partir"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les desserts"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les onomatopées"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les dernières choses à faire avant de se coucher"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les premières choses à faire en se levant"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les champions du monde de football français"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films PIXAR"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""Les personnages du SAV d'Omar et Fred"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les personnages de Kaamelott"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les personnages du film La citée de la peur"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les personnes qui sont représentées dans Les Guignols de l'info"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les dieux grecs"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les pokemons rares"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les espèces de champignon"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les différents modèles d'iPhone"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les chanteuses françaises qu'on baise pas"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les chanteuses internationales qu'on baise pas"", l'équipe %t commence",12,0
+,,"$ gorgées en jeu : ""les trucs auxquels on peut être allergique"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les marques de PQ"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les applications mobiles de jeux"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les métiers du domaine médical"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les types connus qui font plus de 2 mètres"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les fournisseurs de forfait téléphonique"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les blessures possibles (sans parler de la partie du corps concernée)"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les moyens de se déplacer quand on a aucun permis"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les fausses excuses pour se séparer d'un conjoint"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les défauts récurrents chez son conjoint de sexe masculin"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les défauts récurrents chez son conjoint de sexe féminin"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les produits Apple"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les pratiques pour se débarrasser d'un type trop collant"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les éléments qui font qu'un type est relou"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les métiers où on travaille en vert"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les phrases de 3 mots qui énervent les femmes"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les aliments qu'on peut reconnaître dans un caca"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les chansons de lovers"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films où au moins un animal parle"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films qui font réfléchir"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""ce qui sert à rien et qui coûte cher"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les jeux autour d'un barbecue"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les repas qu'on savoure l'instant présent et qu'on regrette le lendemain"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les moyens de contraception"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les bonbons qui ne ressemblent pas à des fruits"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les phrases récurrentes qu'un videur nous sort"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les bars de la ville dans laquelle vous êtes"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les films où au moins un acteur est vu entièrement nu"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les aliments qui arrachent la gueule"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les gens que %s ne peut pas blairer"", l'équipe %t commence !",12,1
+,,"$ gorgées en jeu : ""les marques qui produisent des boules ou barres chocolatées"", l'équipe %t commence !",12,0
+,,"$ gorgées en jeu : ""les clubs de golf"", l'équipe %t commence !",12,0
+,,L'équipe qui possède le plus grand joueur boit $ gorgées !,13,0
+,,L'équipe qui possède le plus de filles boit $ gorgées !,13,0
+,,L'équipe qui possède le joueur le plus poilu boit $ gorgées !,13,0
+,,L'équipe qui possède le joueur avec le moins de cheveux boit $ gorgées !,13,0
+,,L'équipe qui possède le plus de célibataires boit $ gorgées !,13,0
+,,L'équipe qui possède le plus de personnes en couple boit $ gorgées !,13,0
+,,%s tu pues ! Arrête de jouer pendant les 2 prochains tours et bois seul(e) à chaque fois !,13,1
+,,L'équipe qui possède le joueur avec le plus gros salaire boit $ gorgées !,13,0
+,,L'équipe qui possède le joueur le plus bourré boit $ gorgées !,13,0
+,,L'équipe qui possède le dernier joueur à avoir mangé un plat asiatique boit $ gorgées !,13,0
+,,L'équipe %t boit $ gorgées pour le plaisir !,13,0
+,,Les deux équipes trinquent avec $ gorgées !,13,0
+,,L'équipe qui contient le joueur avec le plus grand nez boit $ gorgées !,13,0
+,,"Equipe %t, élisez parmi vous le puit de l'équipe. Il ou elle finira son verre",13,0
+,,"Equipe %t, choisissez deux de vos membres qui finiront leurs verres",13,0
