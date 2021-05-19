@@ -1,6 +1,6 @@
 create table playlist
 (
-    id            bigint not null
+    id            bigserial
         constraint playlist_pkey
             primary key,
     is_public     boolean,
@@ -13,6 +13,17 @@ create table playlist
 alter table playlist
     owner to postgres;
 
+create table timecode
+(
+    id       bigserial
+        constraint timecode_pkey
+            primary key,
+    song_id  varchar(255),
+    timecode numeric(19, 2) not null
+);
+
+alter table timecode
+    owner to postgres;
 
 create table playlist_timecodes
 (

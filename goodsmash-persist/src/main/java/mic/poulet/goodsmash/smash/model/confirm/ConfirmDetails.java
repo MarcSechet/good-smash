@@ -14,7 +14,7 @@ import lombok.Setter;
 public class ConfirmDetails {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private Long targetId;

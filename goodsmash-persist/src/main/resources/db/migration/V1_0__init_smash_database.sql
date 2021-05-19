@@ -1,6 +1,6 @@
 create table confirm_details
 (
-    id                   bigint not null
+    id                   bigserial
         constraint confirm_details_pkey
             primary key,
     comment              varchar(255),
@@ -16,7 +16,7 @@ alter table confirm_details
 
 create table my_image
 (
-    id   bigint not null
+    id   bigserial
         constraint my_image_pkey
             primary key,
     data oid
@@ -27,7 +27,7 @@ alter table my_image
 
 create table character
 (
-    id               bigint  not null
+    id               bigserial
         constraint character_pkey
             primary key,
     character_weight varchar(255),
@@ -40,7 +40,7 @@ create table character
     icon_id          bigint
         constraint fk7e8pv2qbu6ttr5u9xi83rxsp2
             references my_image,
-    my_image_id         bigint
+    my_image_id      bigint
         constraint fk9y001ebso7y1ajuevjtjs7k4t
             references my_image
 );
@@ -50,7 +50,7 @@ alter table character
 
 create table best_move
 (
-    id           bigint not null
+    id           bigserial
         constraint best_move_pkey
             primary key,
     description  varchar(1200),
@@ -79,7 +79,7 @@ alter table character_additional_filters
 
 create table combo
 (
-    id           bigint not null
+    id           bigserial
         constraint combo_pkey
             primary key,
     description  varchar(255),
@@ -99,7 +99,7 @@ alter table combo
 
 create table combo_additional_filters
 (
-    combo_id       bigint not null
+    combo_id           bigint not null
         constraint fkh5wykny07l1tld8q0jcvdo8rn
             references combo,
     additional_filters varchar(255)
@@ -110,7 +110,7 @@ alter table combo_additional_filters
 
 create table confirm
 (
-    id           bigint not null
+    id           bigserial
         constraint confirm_pkey
             primary key,
     comment      varchar(255),
@@ -126,24 +126,24 @@ create table confirm
 alter table confirm
     owner to postgres;
 
-create table confirm_confirm_detailss
+create table confirm_confirm_details
 (
-    confirm_id          bigint not null
+    confirm_id         bigint not null
         constraint fkqsbo0x51hvnpbnq8mrghwldmn
             references confirm,
-    confirm_detailss_id bigint not null
+    confirm_details_id bigint not null
         constraint uk_ie22ll1emc0ndku1gu98bxpwc
             unique
         constraint fkku265rxp15q5h8t8yl3tenrme
             references confirm_details
 );
 
-alter table confirm_confirm_detailss
+alter table confirm_confirm_details
     owner to postgres;
 
 create table information
 (
-    id               bigint not null
+    id               bigserial
         constraint information_pkey
             primary key,
     description      varchar(1200),
@@ -159,7 +159,7 @@ alter table information
 
 create table move
 (
-    id bigint not null
+    id bigserial
         constraint move_pkey
             primary key
 );
@@ -172,7 +172,7 @@ create table combo_moves
     combo_id bigint not null
         constraint fkq37eg9trt923n11txk497d7vu
             references combo,
-    moves_id     bigint not null
+    moves_id bigint not null
         constraint uk_r13qw9bsgrp4qpq6ybyvitgrb
             unique
         constraint fkhcpr7y6n0a49yh8g0qvysh3oh
@@ -195,10 +195,10 @@ alter table move_inputs
 
 create table tier
 (
-    id    bigint not null
+    id    bigserial
         constraint tier_pkey
             primary key,
-    color varchar(10) default '#000000'::character varying,
+    color varchar(10) default '#000000':: character varying,
     name  varchar(255)
         constraint uk_41thf79xhgrvjrsjgafbifysh
             unique,
@@ -221,7 +221,7 @@ alter table tier_character_ids
 
 create table tierlist
 (
-    id           bigint not null
+    id           bigserial
         constraint tierlist_pkey
             primary key,
     description  varchar(255),
@@ -262,23 +262,9 @@ create table tierlist_unused_character_ids
 alter table tierlist_unused_character_ids
     owner to postgres;
 
-create table timecode
-(
-    id       bigint         not null
-        constraint timecode_pkey
-            primary key,
-    song_id  varchar(255),
-    timecode numeric(19, 2) not null
-);
-
-alter table timecode
-    owner to postgres;
-
-
-
 create table smash_user
 (
-    id          bigint  not null
+    id          bigserial
         constraint smash_user_pkey
             primary key,
     email       varchar(255)

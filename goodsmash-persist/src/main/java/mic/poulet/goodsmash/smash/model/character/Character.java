@@ -30,7 +30,7 @@ import mic.poulet.goodsmash.smash.model.tierlist.Tierlist;
 public class Character {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true)
