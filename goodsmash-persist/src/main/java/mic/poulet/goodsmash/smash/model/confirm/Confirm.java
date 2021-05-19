@@ -25,7 +25,7 @@ import lombok.Setter;
 public class Confirm {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@Size(max = 1200)

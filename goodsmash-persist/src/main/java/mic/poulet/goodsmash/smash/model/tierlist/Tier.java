@@ -21,7 +21,7 @@ import lombok.Setter;
 @Setter
 public class Tier {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private Integer rank;
