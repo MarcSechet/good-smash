@@ -1,6 +1,6 @@
 create table question
 (
-    id                   bigint  not null
+    id bigserial
         constraint question_pkey
             primary key,
     category             varchar(255),
