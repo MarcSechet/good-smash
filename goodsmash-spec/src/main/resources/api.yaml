@@ -28,6 +28,13 @@ components:
       schema:
         type: integer
         format: int64
+    playlistId:
+      in: path
+      required: true
+      name: playlistId
+      description: element id
+      schema:
+        type: string
   schemas:
     CategoryDto:
       title: Category
@@ -75,6 +82,36 @@ components:
         questionFromPicolo:
           type: boolean
 
+    PlaylistDto:
+      title: PlaylistDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        playlistId:
+          type: string
+        timecodes:
+          type: array
+          items:
+            $ref: "#/components/schemas/TimecodeDto"
+        uploaderName:
+          type: string
+        isPublic:
+          type: boolean
+
+    TimecodeDto:
+      title: TimecodeDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        songId:
+          type: string
+        timecode:
+          type: integer
+          format: int64
 
 paths:
   '/papicolo/questions':
@@ -112,6 +149,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/QuestionDto'
+
 
   '/papicolo/questions/{id}':
     get:
@@ -185,6 +223,128 @@ paths:
           schema:
             type: integer
             format: int64
+      responses:
+        '200':
+          description: OK
+
+  '/pepites/playlists':
+    get:
+      tags:
+        - Pepites
+      summary: Get all playlists
+      operationId: getAllPlaylists
+      parameters:
+        - in: query
+          required: false
+          name: uploaderName
+          description: uploader name
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PlaylistDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Pepites
+      summary: create a playlist
+      operationId: createPlaylist
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlaylistDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlaylistDto'
+
+  '/pepites/playlists/{playlistId}':
+    get:
+      tags:
+        - Pepites
+      summary: get playlist by playlistId
+      operationId: getByPlaylistId
+      parameters:
+        - $ref: '#/components/parameters/playlistId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlaylistDto'
+    patch:
+      tags:
+        - Pepites
+      summary: patch playlist by playlistId
+      operationId: updateByPlaylistId
+      parameters:
+        - $ref: '#/components/parameters/playlistId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlaylistDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlaylistDto'
+    delete:
+      tags:
+        - Pepites
+      summary: delete question by playlistId
+      operationId: deleteByPlaylistId
+      parameters:
+        - $ref: '#/components/parameters/playlistId'
+      responses:
+        '200':
+          description: OK
+
+  '/pepites/playlists/{playlistId}/timecodes':
+    post:
+      tags:
+        - Pepites
+      summary: add timecode in playlist
+      operationId: addTimeCodeInPlaylist
+      parameters:
+        - $ref: '#/components/parameters/playlistId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TimecodeDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlaylistDto'
+
+  '/pepites/playlists/{playlistId}/timecodes/{id}':
+    delete:
+      tags:
+        - Pepites
+      summary: delete timecode in playlist
+      operationId: deleteTimecodeById
+      parameters:
+        - $ref: '#/components/parameters/playlistId'
+        - $ref: '#/components/parameters/id'
       responses:
         '200':
           description: OK
