@@ -91,15 +91,4 @@ public class PapicoloController implements PapicoloApi {
 		papicoloService.deleteChildQuestion(question, childId);
 		return ResponseEntity.ok().build();
 	}
-
-	/*
-
-
-	@DeleteMapping("/childs")
-    public ResponseEntity<Void> deleteChildQuestion(@RequestParam(name = "id") Long id, @RequestParam(name = "childId") Long childId) {
-		Question question = picoloRepository.getOne(id);
-		question.getChildren().removeIf(question1 -> question1.getId().equals(childId));
-		picoloRepository.save(question);
-		return ResponseEntity.ok().build();
-	}*/
 }
