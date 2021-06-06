@@ -35,6 +35,13 @@ components:
       description: element id
       schema:
         type: string
+    name:
+      in: path
+      required: true
+      name: name
+      description: character name
+      schema:
+        type: string
   schemas:
     CategoryDto:
       title: Category
@@ -113,6 +120,269 @@ components:
           type: integer
           format: int64
 
+    UserDto:
+      title: UserDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        email:
+          type: string
+        isApproved:
+          type: boolean
+
+    CharacterDto:
+      title: CharacterDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        tier:
+          type: string
+        characterWeight:
+          $ref: "#/components/schemas/CharacterWeightDto"
+        isFloaty:
+          type: boolean
+        image:
+          type: string
+          format: byte
+        icon:
+          type: string
+          format: byte
+        additionalFilters:
+          type: array
+          items:
+            type: string
+        skillRating:
+          type: integer
+          format: int32
+        informations:
+          type: array
+          items:
+            $ref: "#/components/schemas/InformationDto"
+        bestMoves:
+          type: array
+          items:
+            $ref: "#/components/schemas/BestMoveDto"
+        confirms:
+          type: array
+          items:
+            $ref: "#/components/schemas/ConfirmDto"
+        combos:
+          type: array
+          items:
+            $ref: "#/components/schemas/ComboDto"
+        tierlists:
+          type: array
+          items:
+            $ref: "#/components/schemas/TierlistDto"
+
+    CharacterWeightDto:
+      title: CharacterWeight
+      type: string
+      enum:
+        - HEAVY
+        - MEDIUM
+        - LIGHT
+
+    ComboDto:
+      title: ComboDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        videoUrl:
+          type: string
+        description:
+          type: string
+        minPercent:
+          type: integer
+          format: int32
+        maxPercent:
+          type: integer
+          format: int32
+        moves:
+          type: array
+          items:
+            $ref: "#/components/schemas/MoveDto"
+        additionalFilters:
+          type: array
+          items:
+            type: string
+
+    MoveDto:
+      title: MoveDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        inputs:
+          type: array
+          items:
+            type: string
+
+    ConfirmDto:
+      title: ConfirmDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+          maxLength: 1200
+        description:
+          type: string
+        comment:
+          type: string
+        moves:
+          type: array
+          items:
+            $ref: MoveDto
+        confirmDetailsDtos:
+          type: array
+          items:
+            $ref: "#/components/schemas/ConfirmDetailsDto"
+
+    ConfirmDetailsDto:
+      title: ConfirmDetailsDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        targetId:
+          type: integer
+          format: int64
+        killPercentRage0:
+          type: integer
+          format: int32
+        killPercentRage50:
+          type: integer
+          format: int32
+        killPercentRage100:
+          type: integer
+          format: int32
+        killPercentRage150:
+          type: integer
+          format: int32
+        comment:
+          type: string
+
+    InformationDto:
+      title: InformationDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        informationType:
+          $ref: "#/components/schemas/InformationTypeDto"
+        targetId:
+          type: integer
+          format: int64
+        description:
+          type: string
+          maxLength: 1200
+
+    InformationTypeDto:
+      title: InformationType
+      type: string
+      enum:
+        - ADVANTAGE
+        - DISADVANTAGE
+        - PRO
+        - CON
+        - GENERAL_DESCRIPTION
+
+    BestMoveDto:
+      title: BestMoveDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        videoUrl:
+          type: string
+        description:
+          type: string
+          maxLength: 1200
+
+    TierlistDto:
+      title: TierlistDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        description:
+          type: string
+        tiers:
+          type: array
+          items:
+            $ref: "#/components/schemas/TierDto"
+        unusedCharacterIds:
+          type: array
+          items:
+            type: integer
+            format: int64
+
+    TierDto:
+      title: TierDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        rank:
+          type: integer
+          format: int32
+        name:
+          type: string
+        color:
+          type: string
+        characterIds:
+          type: array
+          items:
+            type: integer
+            format: int64
+
+
+    ImageDto:
+      title: ImageDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        data:
+          type: string
+          format: byte
+
+    MultipartCharacterDto:
+      title: MultipartCharacterDto
+      type: object
+      properties:
+        data:
+          $ref: "#/components/schemas/CharacterDto"
+        image:
+          type: string
+          format: binary
+        icon:
+          type: string
+          format: binary
 paths:
   '/papicolo/questions':
     get:
@@ -149,6 +419,50 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/QuestionDto'
+
+  '/smash/auth/login':
+    post:
+      tags:
+        - Auth
+      summary: login to smash
+      operationId: login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDto'
+        '500':
+          $ref: '#/components/responses/500'
+
+  '/smash/auth/logout':
+    post:
+      tags:
+        - Auth
+      summary: logout to smash
+      operationId: logout
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDto'
+        '500':
+          $ref: '#/components/responses/500'
 
 
   '/papicolo/questions/{id}':
@@ -345,6 +659,86 @@ paths:
       parameters:
         - $ref: '#/components/parameters/playlistId'
         - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/characters':
+    get:
+      tags:
+        - Characters
+      summary: Get all characters
+      operationId: getAllCharacters
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CharacterDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Characters
+      summary: create a character
+      operationId: createCharacter
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MultipartCharacterDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CharacterDto'
+  '/smash/characters/{name}':
+    get:
+      tags:
+        - Characters
+      summary: get character by name
+      operationId: GetCharacterByName
+      parameters:
+        - $ref: '#/components/parameters/name'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CharacterDto'
+    patch:
+      tags:
+        - Characters
+      summary: patch character by name
+      operationId: updateByName
+      parameters:
+        - $ref: '#/components/parameters/name'
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MultipartCharacterDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CharacterDto'
+    delete:
+      tags:
+        - Characters
+      summary: delete character by name
+      operationId: deleteByName
+      parameters:
+        - $ref: '#/components/parameters/name'
       responses:
         '200':
           description: OK

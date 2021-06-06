@@ -1,4 +1,4 @@
-package mic.poulet.goodsmash;
+package mic.poulet.goodsmash.papicolo;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

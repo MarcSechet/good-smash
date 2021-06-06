@@ -11,7 +11,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import lombok.AllArgsConstructor;
-import mic.poulet.goodsmash.PapicoloService;
+import mic.poulet.goodsmash.papicolo.PapicoloService;
 import mic.poulet.goodsmash.papicolo.model.Category;
 import mic.poulet.goodsmash.papicolo.model.Question;
 import mic.poulet.goodsmash.papicolo.model.QuestionType;

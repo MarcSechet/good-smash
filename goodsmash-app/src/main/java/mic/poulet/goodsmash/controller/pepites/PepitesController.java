@@ -11,7 +11,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import lombok.AllArgsConstructor;
-import mic.poulet.goodsmash.PepitesService;
+import mic.poulet.goodsmash.pepites.PepitesService;
 import mic.poulet.goodsmash.pepites.model.Playlist;
 import mic.poulet.goodsmash.pepites.model.Timecode;
 import mic.poulet.goodsmash.spec.api.PepitesApi;
