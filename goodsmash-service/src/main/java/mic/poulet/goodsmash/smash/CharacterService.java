@@ -15,16 +15,16 @@ public class CharacterService {
 
 	private final CharacterDao characterDao;
 
+	public Optional<Character> findById(Long id) {
+		return characterDao.findById(id);
+	}
+
 	public Optional<Character> findByName(String name) {
 		return characterDao.findByName(name);
 	}
 
 	public List<Character> getAll() {
 		return characterDao.findAllByOrderByNameAsc();
-	}
-
-	public Character create(Character character) {
-		return characterDao.save(character);
 	}
 
 	public Character save(Character character) {

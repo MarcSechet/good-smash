@@ -21,6 +21,9 @@ public class ModelMapperConfig {
 		modelMapper.getConfiguration()
 				.setMatchingStrategy(MatchingStrategies.STRICT);
 
+		modelMapper.typeMap(Character.class, CharacterDto.class)
+				.addMapping(Character::isFloaty, CharacterDto::setIsFloaty);
+
 		return modelMapper;
 	}
 }

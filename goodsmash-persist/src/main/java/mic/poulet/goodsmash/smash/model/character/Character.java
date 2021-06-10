@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -33,6 +35,7 @@ public class Character {
     @Column(unique = true)
     private String name;
     private String tier;
+    @Enumerated(EnumType.STRING)
     private CharacterWeight characterWeight;
     private boolean isFloaty;
 

@@ -28,6 +28,38 @@ components:
       schema:
         type: integer
         format: int64
+    queryCharacterId:
+      in: query
+      required: true
+      name: characterId
+      description: character Id
+      schema:
+        type: integer
+        format: int64
+    pathCharacterId:
+      in: path
+      required: true
+      name: characterId
+      description: character Id
+      schema:
+        type: integer
+        format: int64
+    pathInformationId:
+      in: path
+      required: true
+      name: informationId
+      description: information id
+      schema:
+        type: integer
+        format: int64
+    queryInformationId:
+      in: query
+      required: false
+      name: informationId
+      description: information id
+      schema:
+        type: integer
+        format: int64
     playlistId:
       in: path
       required: true
@@ -42,6 +74,21 @@ components:
       description: character name
       schema:
         type: string
+    queryTargetId:
+      in: query
+      required: false
+      name: targetId
+      description: target id
+      schema:
+        type: integer
+        format: int64
+    queryInformationType:
+      in: query
+      required: false
+      name: informationTypeDto
+      description: information type
+      schema:
+        $ref: "#/components/schemas/InformationTypeDto"
   schemas:
     CategoryDto:
       title: Category
@@ -739,6 +786,93 @@ paths:
       operationId: deleteByName
       parameters:
         - $ref: '#/components/parameters/name'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/informations':
+    get:
+      tags:
+        - Informations
+      summary: get informations through various criteria
+      operationId: search informations
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+        - $ref: '#/components/parameters/queryTargetId'
+        - $ref: '#/components/parameters/queryInformationType'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InformationDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Informations
+      summary: create an information
+      operationId: createInformation
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InformationDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InformationDto'
+
+  '/smash/informations/{informationId}':
+    get:
+      tags:
+        - Informations
+      summary: get information
+      operationId: getInformationById
+      parameters:
+        - $ref: '#/components/parameters/pathInformationId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InformationDto'
+    patch:
+      tags:
+        - Informations
+      summary: patch information
+      operationId: updateInformationById
+      parameters:
+        - $ref: '#/components/parameters/pathInformationId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InformationDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InformationDto'
+    delete:
+      tags:
+        - Informations
+      summary: delete information
+      operationId: deleteInformationById
+      parameters:
+        - $ref: '#/components/parameters/pathInformationId'
       responses:
         '200':
           description: OK

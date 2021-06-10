@@ -15,7 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 import lombok.AllArgsConstructor;
 import mic.poulet.goodsmash.exceptions.InvalidDataException;
 import mic.poulet.goodsmash.smash.CharacterService;
-import mic.poulet.goodsmash.smash.dao.CharacterDao;
 import mic.poulet.goodsmash.smash.dao.ImageDao;
 import mic.poulet.goodsmash.smash.model.ImageType;
 import mic.poulet.goodsmash.smash.model.MyImage;
@@ -58,7 +57,7 @@ public class CharacterController implements CharactersApi {
 	@Override
 	public ResponseEntity<CharacterDto> createCharacter(CharacterDto data, MultipartFile image, MultipartFile icon) {
 		Character character = mapper.map(data, Character.class);
-		character = characterService.create(character);
+		character = characterService.save(character);
 		try {
 			if (image != null) {
 				imageDao.save(new MyImage(image.getBytes(), character.getId(), ImageType.IMAGE));

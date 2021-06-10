@@ -6,10 +6,12 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.Size;
 
 import lombok.Getter;
 import lombok.Setter;
+import mic.poulet.goodsmash.smash.model.character.Character;
 
 @Entity
 @Getter
@@ -23,7 +25,7 @@ public class Information {
 	@Enumerated(EnumType.STRING)
 	private InformationType informationType;
 
-	private long targetId; // optional, used for advantage & disadvantage
+	private Long targetId; // optional, used for advantage & disadvantage
 
 	@Size(max = 1200)
 	private String description;
