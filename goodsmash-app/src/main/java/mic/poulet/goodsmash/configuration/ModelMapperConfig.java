@@ -23,6 +23,8 @@ public class ModelMapperConfig {
 
 		modelMapper.typeMap(Character.class, CharacterDto.class)
 				.addMapping(Character::isFloaty, CharacterDto::setIsFloaty);
+		modelMapper.typeMap(CharacterDto.class, Character.class)
+				.addMapping(CharacterDto::getIsFloaty, Character::setFloaty);
 
 		return modelMapper;
 	}

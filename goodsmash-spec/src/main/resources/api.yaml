@@ -60,6 +60,14 @@ components:
       schema:
         type: integer
         format: int64
+    pathComboId:
+      in: path
+      required: true
+      name: comboId
+      description: combo id
+      schema:
+        type: integer
+        format: int64
     queryInformationId:
       in: query
       required: false
@@ -966,6 +974,91 @@ paths:
       operationId: deleteBestMoveById
       parameters:
         - $ref: '#/components/parameters/pathBestMoveId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/combos':
+    get:
+      tags:
+        - Combos
+      summary: get combos through various criteria
+      operationId: getCombos
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComboDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Combos
+      summary: create a combo
+      operationId: createCombo
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComboDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComboDto'
+
+  '/smash/combos/{comboId}':
+    get:
+      tags:
+        - Combos
+      summary: get combo by id
+      operationId: getComboById
+      parameters:
+        - $ref: '#/components/parameters/pathComboId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComboDto'
+    patch:
+      tags:
+        - Combos
+      summary: patch combo
+      operationId: updateComboById
+      parameters:
+        - $ref: '#/components/parameters/pathComboId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComboDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComboDto'
+    delete:
+      tags:
+        - Combos
+      summary: delete combo
+      operationId: deleteComboById
+      parameters:
+        - $ref: '#/components/parameters/pathComboId'
       responses:
         '200':
           description: OK
