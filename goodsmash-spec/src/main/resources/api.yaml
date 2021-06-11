@@ -68,6 +68,14 @@ components:
       schema:
         type: integer
         format: int64
+    pathTierlistId:
+      in: path
+      required: true
+      name: tierlistId
+      description: tierlist id
+      schema:
+        type: integer
+        format: int64
     queryInformationId:
       in: query
       required: false
@@ -416,6 +424,7 @@ components:
           type: string
         color:
           type: string
+          pattern: '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$'
         characterIds:
           type: array
           items:
@@ -1059,6 +1068,91 @@ paths:
       operationId: deleteComboById
       parameters:
         - $ref: '#/components/parameters/pathComboId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/tierlists':
+    get:
+      tags:
+        - Tierlists
+      summary: get tierlists through various criteria
+      operationId: getTierlists
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TierlistDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Tierlists
+      summary: create a tierlist
+      operationId: createTierlist
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TierlistDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TierlistDto'
+
+  '/smash/tierlists/{tierlistId}':
+    get:
+      tags:
+        - Tierlists
+      summary: get tierlist by id
+      operationId: getTierlistById
+      parameters:
+        - $ref: '#/components/parameters/pathTierlistId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TierlistDto'
+    patch:
+      tags:
+        - Tierlists
+      summary: patch tierlist
+      operationId: updateTierlistById
+      parameters:
+        - $ref: '#/components/parameters/pathTierlistId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TierlistDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TierlistDto'
+    delete:
+      tags:
+        - Tierlists
+      summary: delete tierlist
+      operationId: deleteTierlistById
+      parameters:
+        - $ref: '#/components/parameters/pathTierlistId'
       responses:
         '200':
           description: OK

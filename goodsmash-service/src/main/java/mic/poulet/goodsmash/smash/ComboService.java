@@ -14,8 +14,8 @@ public class ComboService {
 
 	private final ComboDao comboDao;
 
-	public Optional<Combo> findById(Long informationId) {
-		return comboDao.findById(informationId);
+	public Optional<Combo> findById(Long comboId) {
+		return comboDao.findById(comboId);
 	}
 
 	public Combo save(Combo combo) {
