@@ -1,16 +1,14 @@
 package mic.poulet.goodsmash.configuration;
 
-import org.apache.catalina.User;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import mic.poulet.goodsmash.smash.model.MyImage;
-import mic.poulet.goodsmash.smash.model.auth.SmashUser;
 import mic.poulet.goodsmash.smash.model.character.Character;
+import mic.poulet.goodsmash.smash.model.confirm.Confirm;
 import mic.poulet.goodsmash.spec.model.CharacterDto;
-import mic.poulet.goodsmash.spec.model.UserDto;
+import mic.poulet.goodsmash.spec.model.ConfirmDto;
 
 @Configuration
 public class ModelMapperConfig {
@@ -25,6 +23,10 @@ public class ModelMapperConfig {
 				.addMapping(Character::isFloaty, CharacterDto::setIsFloaty);
 		modelMapper.typeMap(CharacterDto.class, Character.class)
 				.addMapping(CharacterDto::getIsFloaty, Character::setFloaty);
+		modelMapper.typeMap(Confirm.class, ConfirmDto.class)
+				.addMapping(Confirm::getConfirmDetails, ConfirmDto::setConfirmDetailsDtos);
+		modelMapper.typeMap(ConfirmDto.class, Confirm.class)
+				.addMapping(ConfirmDto::getConfirmDetailsDtos, Confirm::setConfirmDetails);
 
 		return modelMapper;
 	}

@@ -76,6 +76,22 @@ components:
       schema:
         type: integer
         format: int64
+    pathConfirmId:
+      in: path
+      required: true
+      name: confirmId
+      description: confirm id
+      schema:
+        type: integer
+        format: int64
+    pathConfirmDetailsId:
+      in: path
+      required: true
+      name: confirmDetailsId
+      description: confirm details id
+      schema:
+        type: integer
+        format: int64
     queryInformationId:
       in: query
       required: false
@@ -314,10 +330,6 @@ components:
           type: string
         comment:
           type: string
-        moves:
-          type: array
-          items:
-            $ref: MoveDto
         confirmDetailsDtos:
           type: array
           items:
@@ -1153,6 +1165,146 @@ paths:
       operationId: deleteTierlistById
       parameters:
         - $ref: '#/components/parameters/pathTierlistId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/confirms':
+    get:
+      tags:
+        - Confirms
+      summary: get confirms through various criteria
+      operationId: getConfirms
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ConfirmDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Confirms
+      summary: create a confirm
+      operationId: createConfirm
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+
+  '/smash/confirms/{confirmId}':
+    get:
+      tags:
+        - Confirms
+      summary: get confirm by id
+      operationId: getConfirmById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+    patch:
+      tags:
+        - Confirms
+      summary: patch confirm
+      operationId: updateConfirmById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+    delete:
+      tags:
+        - Confirms
+      summary: delete confirm
+      operationId: deleteConfirmById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/confirms/{confirmId}/details':
+    post:
+      tags:
+        - Confirms
+      summary: create a confirm details
+      operationId: createConfirmDetails
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmDetailsDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+
+  '/smash/confirms/{confirmId}/details/{confirmDetailsId}':
+    patch:
+      tags:
+        - Confirms
+      summary: patch confirm details
+      operationId: updateConfirmDetailsById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+        - $ref: '#/components/parameters/pathConfirmDetailsId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmDetailsDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+    delete:
+      tags:
+        - Confirms
+      summary: delete confirm details
+      operationId: deleteConfirmDetailsById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+        - $ref: '#/components/parameters/pathConfirmDetailsId'
       responses:
         '200':
           description: OK
