@@ -18,7 +18,6 @@ import mic.poulet.goodsmash.smash.model.information.InformationType;
 public class InformationService {
 
 	private final InformationDao informationDao;
-	private final CharacterDao characterDao;
 
 	public Optional<Information> findById(Long informationId) {
 		return informationDao.findById(informationId);

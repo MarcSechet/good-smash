@@ -52,6 +52,14 @@ components:
       schema:
         type: integer
         format: int64
+    pathBestMoveId:
+      in: path
+      required: true
+      name: bestMoveId
+      description: best move id
+      schema:
+        type: integer
+        format: int64
     queryInformationId:
       in: query
       required: false
@@ -873,6 +881,91 @@ paths:
       operationId: deleteInformationById
       parameters:
         - $ref: '#/components/parameters/pathInformationId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/bestMoves':
+    get:
+      tags:
+        - BestMoves
+      summary: get best moves through various criteria
+      operationId: getBestMoves
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BestMoveDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - BestMoves
+      summary: create a best move
+      operationId: createBestMove
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BestMoveDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BestMoveDto'
+
+  '/smash/bestMoves/{bestMoveId}':
+    get:
+      tags:
+        - BestMoves
+      summary: get best move
+      operationId: getBestMoveById
+      parameters:
+        - $ref: '#/components/parameters/pathBestMoveId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BestMoveDto'
+    patch:
+      tags:
+        - BestMoves
+      summary: patch best move
+      operationId: updateBestMoveById
+      parameters:
+        - $ref: '#/components/parameters/pathBestMoveId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BestMoveDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BestMoveDto'
+    delete:
+      tags:
+        - BestMoves
+      summary: delete best move
+      operationId: deleteBestMoveById
+      parameters:
+        - $ref: '#/components/parameters/pathBestMoveId'
       responses:
         '200':
           description: OK
