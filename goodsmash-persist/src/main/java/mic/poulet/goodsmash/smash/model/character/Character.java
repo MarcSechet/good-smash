@@ -7,17 +7,16 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 
 import lombok.Getter;
 import lombok.Setter;
-import mic.poulet.goodsmash.smash.model.MyImage;
 import mic.poulet.goodsmash.smash.model.combo.Combo;
 import mic.poulet.goodsmash.smash.model.confirm.Confirm;
 import mic.poulet.goodsmash.smash.model.information.Information;
@@ -36,16 +35,9 @@ public class Character {
     @Column(unique = true)
     private String name;
     private String tier;
+    @Enumerated(EnumType.STRING)
     private CharacterWeight characterWeight;
     private boolean isFloaty;
-
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    @JoinColumn(name = "image_id", referencedColumnName = "id")
-    private MyImage image;
-
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    @JoinColumn(name = "icon_id", referencedColumnName = "id")
-    private MyImage icon;
 
     @ElementCollection
     private List<String> additionalFilters; // ex : deep breath for WFT, luma, nana, etc...
@@ -74,17 +66,5 @@ public class Character {
     private List<Tierlist> tierlists = new ArrayList<>();
 
     public Character() {
-    }
-
-    public MyImage getImage() {
-        if (image == null)
-            image = new MyImage();
-        return image;
-    }
-
-    public MyImage getIcon() {
-        if (icon == null)
-            icon = new MyImage();
-        return icon;
     }
 }

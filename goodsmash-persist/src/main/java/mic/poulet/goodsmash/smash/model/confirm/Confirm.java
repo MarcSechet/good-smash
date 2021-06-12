@@ -1,5 +1,6 @@
 package mic.poulet.goodsmash.smash.model.confirm;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -37,7 +38,7 @@ public class Confirm {
 
 	@OneToMany(targetEntity = ConfirmDetails.class, cascade = CascadeType.ALL,
 			orphanRemoval = true)
-	private List<ConfirmDetails> confirmDetails;
+	private List<ConfirmDetails> confirmDetails = new ArrayList<>();
 
 	protected Confirm() {
 	}

@@ -33,6 +33,7 @@
                             ${project.basedir}/src/main/resources/api.yaml
                         </inputSpec>
                         <generatorName>spring</generatorName>
+                        <library>spring-boot</library>
                         <apiPackage>${apiPackage}.api</apiPackage>
                         <modelPackage>${apiPackage}.model</modelPackage>
                         <supportingFilesToGenerate>
@@ -41,6 +42,8 @@
                         <configOptions>
                             <delegatePattern>true</delegatePattern>
                             <dateLibrary>java8</dateLibrary>
+                            <java8>true</java8>
+                            <useTags>true</useTags>
                             <interfaceOnly>true</interfaceOnly>
                             <useBeanValidation>true</useBeanValidation>
                             <performBeanValidation>true</performBeanValidation>

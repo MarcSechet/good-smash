@@ -1,5 +1,6 @@
 package mic.poulet.goodsmash.smash.model.tierlist;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -33,5 +34,5 @@ public class Tier {
 	private String color;
 
 	@ElementCollection
-	private List<Long> characterIds;
+	private List<Long> characterIds = new ArrayList<>();
 }

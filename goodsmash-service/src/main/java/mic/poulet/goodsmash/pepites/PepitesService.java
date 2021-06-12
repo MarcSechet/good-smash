@@ -1,4 +1,4 @@
-package mic.poulet.goodsmash;
+package mic.poulet.goodsmash.pepites;
 
 import java.util.List;
 import java.util.Optional;

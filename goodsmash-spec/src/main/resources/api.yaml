@@ -28,6 +28,78 @@ components:
       schema:
         type: integer
         format: int64
+    queryCharacterId:
+      in: query
+      required: true
+      name: characterId
+      description: character Id
+      schema:
+        type: integer
+        format: int64
+    pathCharacterId:
+      in: path
+      required: true
+      name: characterId
+      description: character Id
+      schema:
+        type: integer
+        format: int64
+    pathInformationId:
+      in: path
+      required: true
+      name: informationId
+      description: information id
+      schema:
+        type: integer
+        format: int64
+    pathBestMoveId:
+      in: path
+      required: true
+      name: bestMoveId
+      description: best move id
+      schema:
+        type: integer
+        format: int64
+    pathComboId:
+      in: path
+      required: true
+      name: comboId
+      description: combo id
+      schema:
+        type: integer
+        format: int64
+    pathTierlistId:
+      in: path
+      required: true
+      name: tierlistId
+      description: tierlist id
+      schema:
+        type: integer
+        format: int64
+    pathConfirmId:
+      in: path
+      required: true
+      name: confirmId
+      description: confirm id
+      schema:
+        type: integer
+        format: int64
+    pathConfirmDetailsId:
+      in: path
+      required: true
+      name: confirmDetailsId
+      description: confirm details id
+      schema:
+        type: integer
+        format: int64
+    queryInformationId:
+      in: query
+      required: false
+      name: informationId
+      description: information id
+      schema:
+        type: integer
+        format: int64
     playlistId:
       in: path
       required: true
@@ -35,6 +107,28 @@ components:
       description: element id
       schema:
         type: string
+    name:
+      in: path
+      required: true
+      name: name
+      description: character name
+      schema:
+        type: string
+    queryTargetId:
+      in: query
+      required: false
+      name: targetId
+      description: target id
+      schema:
+        type: integer
+        format: int64
+    queryInformationType:
+      in: query
+      required: false
+      name: informationTypeDto
+      description: information type
+      schema:
+        $ref: "#/components/schemas/InformationTypeDto"
   schemas:
     CategoryDto:
       title: Category
@@ -113,6 +207,266 @@ components:
           type: integer
           format: int64
 
+    UserDto:
+      title: UserDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        email:
+          type: string
+        isApproved:
+          type: boolean
+
+    CharacterDto:
+      title: CharacterDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        tier:
+          type: string
+        characterWeight:
+          $ref: "#/components/schemas/CharacterWeightDto"
+        isFloaty:
+          type: boolean
+        image:
+          type: string
+          format: byte
+        icon:
+          type: string
+          format: byte
+        additionalFilters:
+          type: array
+          items:
+            type: string
+        skillRating:
+          type: integer
+          format: int32
+        informations:
+          type: array
+          items:
+            $ref: "#/components/schemas/InformationDto"
+        bestMoves:
+          type: array
+          items:
+            $ref: "#/components/schemas/BestMoveDto"
+        confirms:
+          type: array
+          items:
+            $ref: "#/components/schemas/ConfirmDto"
+        combos:
+          type: array
+          items:
+            $ref: "#/components/schemas/ComboDto"
+        tierlists:
+          type: array
+          items:
+            $ref: "#/components/schemas/TierlistDto"
+
+    CharacterWeightDto:
+      title: CharacterWeight
+      type: string
+      enum:
+        - HEAVY
+        - MEDIUM
+        - LIGHT
+
+    ComboDto:
+      title: ComboDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        videoUrl:
+          type: string
+        description:
+          type: string
+        minPercent:
+          type: integer
+          format: int32
+        maxPercent:
+          type: integer
+          format: int32
+        moves:
+          type: array
+          items:
+            $ref: "#/components/schemas/MoveDto"
+        additionalFilters:
+          type: array
+          items:
+            type: string
+
+    MoveDto:
+      title: MoveDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        inputs:
+          type: array
+          items:
+            type: string
+
+    ConfirmDto:
+      title: ConfirmDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+          maxLength: 1200
+        description:
+          type: string
+        comment:
+          type: string
+        confirmDetailsDtos:
+          type: array
+          items:
+            $ref: "#/components/schemas/ConfirmDetailsDto"
+
+    ConfirmDetailsDto:
+      title: ConfirmDetailsDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        targetId:
+          type: integer
+          format: int64
+        killPercentRage0:
+          type: integer
+          format: int32
+        killPercentRage50:
+          type: integer
+          format: int32
+        killPercentRage100:
+          type: integer
+          format: int32
+        killPercentRage150:
+          type: integer
+          format: int32
+        comment:
+          type: string
+
+    InformationDto:
+      title: InformationDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        informationType:
+          $ref: "#/components/schemas/InformationTypeDto"
+        targetId:
+          type: integer
+          format: int64
+        description:
+          type: string
+          maxLength: 1200
+
+    InformationTypeDto:
+      title: InformationType
+      type: string
+      enum:
+        - ADVANTAGE
+        - DISADVANTAGE
+        - PRO
+        - CON
+        - GENERAL_DESCRIPTION
+
+    BestMoveDto:
+      title: BestMoveDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        videoUrl:
+          type: string
+        description:
+          type: string
+          maxLength: 1200
+
+    TierlistDto:
+      title: TierlistDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        description:
+          type: string
+        tiers:
+          type: array
+          items:
+            $ref: "#/components/schemas/TierDto"
+        unusedCharacterIds:
+          type: array
+          items:
+            type: integer
+            format: int64
+
+    TierDto:
+      title: TierDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        rank:
+          type: integer
+          format: int32
+        name:
+          type: string
+        color:
+          type: string
+          pattern: '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$'
+        characterIds:
+          type: array
+          items:
+            type: integer
+            format: int64
+
+
+    ImageDto:
+      title: ImageDto
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        data:
+          type: string
+          format: byte
+
+    MultipartCharacterDto:
+      title: MultipartCharacterDto
+      type: object
+      properties:
+        data:
+          $ref: "#/components/schemas/CharacterDto"
+        image:
+          type: string
+          format: binary
+        icon:
+          type: string
+          format: binary
 paths:
   '/papicolo/questions':
     get:
@@ -149,6 +503,50 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/QuestionDto'
+
+  '/smash/auth/login':
+    post:
+      tags:
+        - Auth
+      summary: login to smash
+      operationId: login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDto'
+        '500':
+          $ref: '#/components/responses/500'
+
+  '/smash/auth/logout':
+    post:
+      tags:
+        - Auth
+      summary: logout to smash
+      operationId: logout
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDto'
+        '500':
+          $ref: '#/components/responses/500'
 
 
   '/papicolo/questions/{id}':
@@ -345,6 +743,568 @@ paths:
       parameters:
         - $ref: '#/components/parameters/playlistId'
         - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/characters':
+    get:
+      tags:
+        - Characters
+      summary: Get all characters
+      operationId: getAllCharacters
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CharacterDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Characters
+      summary: create a character
+      operationId: createCharacter
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MultipartCharacterDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CharacterDto'
+  '/smash/characters/{name}':
+    get:
+      tags:
+        - Characters
+      summary: get character by name
+      operationId: GetCharacterByName
+      parameters:
+        - $ref: '#/components/parameters/name'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CharacterDto'
+    patch:
+      tags:
+        - Characters
+      summary: patch character by name
+      operationId: updateByName
+      parameters:
+        - $ref: '#/components/parameters/name'
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MultipartCharacterDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CharacterDto'
+    delete:
+      tags:
+        - Characters
+      summary: delete character by name
+      operationId: deleteByName
+      parameters:
+        - $ref: '#/components/parameters/name'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/informations':
+    get:
+      tags:
+        - Informations
+      summary: get informations through various criteria
+      operationId: search informations
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+        - $ref: '#/components/parameters/queryTargetId'
+        - $ref: '#/components/parameters/queryInformationType'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InformationDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Informations
+      summary: create an information
+      operationId: createInformation
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InformationDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InformationDto'
+
+  '/smash/informations/{informationId}':
+    get:
+      tags:
+        - Informations
+      summary: get information
+      operationId: getInformationById
+      parameters:
+        - $ref: '#/components/parameters/pathInformationId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InformationDto'
+    patch:
+      tags:
+        - Informations
+      summary: patch information
+      operationId: updateInformationById
+      parameters:
+        - $ref: '#/components/parameters/pathInformationId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InformationDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InformationDto'
+    delete:
+      tags:
+        - Informations
+      summary: delete information
+      operationId: deleteInformationById
+      parameters:
+        - $ref: '#/components/parameters/pathInformationId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/bestMoves':
+    get:
+      tags:
+        - BestMoves
+      summary: get best moves through various criteria
+      operationId: getBestMoves
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BestMoveDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - BestMoves
+      summary: create a best move
+      operationId: createBestMove
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BestMoveDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BestMoveDto'
+
+  '/smash/bestMoves/{bestMoveId}':
+    get:
+      tags:
+        - BestMoves
+      summary: get best move
+      operationId: getBestMoveById
+      parameters:
+        - $ref: '#/components/parameters/pathBestMoveId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BestMoveDto'
+    patch:
+      tags:
+        - BestMoves
+      summary: patch best move
+      operationId: updateBestMoveById
+      parameters:
+        - $ref: '#/components/parameters/pathBestMoveId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BestMoveDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BestMoveDto'
+    delete:
+      tags:
+        - BestMoves
+      summary: delete best move
+      operationId: deleteBestMoveById
+      parameters:
+        - $ref: '#/components/parameters/pathBestMoveId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/combos':
+    get:
+      tags:
+        - Combos
+      summary: get combos through various criteria
+      operationId: getCombos
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComboDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Combos
+      summary: create a combo
+      operationId: createCombo
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComboDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComboDto'
+
+  '/smash/combos/{comboId}':
+    get:
+      tags:
+        - Combos
+      summary: get combo by id
+      operationId: getComboById
+      parameters:
+        - $ref: '#/components/parameters/pathComboId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComboDto'
+    patch:
+      tags:
+        - Combos
+      summary: patch combo
+      operationId: updateComboById
+      parameters:
+        - $ref: '#/components/parameters/pathComboId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComboDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComboDto'
+    delete:
+      tags:
+        - Combos
+      summary: delete combo
+      operationId: deleteComboById
+      parameters:
+        - $ref: '#/components/parameters/pathComboId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/tierlists':
+    get:
+      tags:
+        - Tierlists
+      summary: get tierlists through various criteria
+      operationId: getTierlists
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TierlistDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Tierlists
+      summary: create a tierlist
+      operationId: createTierlist
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TierlistDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TierlistDto'
+
+  '/smash/tierlists/{tierlistId}':
+    get:
+      tags:
+        - Tierlists
+      summary: get tierlist by id
+      operationId: getTierlistById
+      parameters:
+        - $ref: '#/components/parameters/pathTierlistId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TierlistDto'
+    patch:
+      tags:
+        - Tierlists
+      summary: patch tierlist
+      operationId: updateTierlistById
+      parameters:
+        - $ref: '#/components/parameters/pathTierlistId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TierlistDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TierlistDto'
+    delete:
+      tags:
+        - Tierlists
+      summary: delete tierlist
+      operationId: deleteTierlistById
+      parameters:
+        - $ref: '#/components/parameters/pathTierlistId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/confirms':
+    get:
+      tags:
+        - Confirms
+      summary: get confirms through various criteria
+      operationId: getConfirms
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ConfirmDto'
+        '500':
+          $ref: '#/components/responses/500'
+    post:
+      tags:
+        - Confirms
+      summary: create a confirm
+      operationId: createConfirm
+      parameters:
+        - $ref: '#/components/parameters/queryCharacterId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+
+  '/smash/confirms/{confirmId}':
+    get:
+      tags:
+        - Confirms
+      summary: get confirm by id
+      operationId: getConfirmById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+    patch:
+      tags:
+        - Confirms
+      summary: patch confirm
+      operationId: updateConfirmById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+    delete:
+      tags:
+        - Confirms
+      summary: delete confirm
+      operationId: deleteConfirmById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+      responses:
+        '200':
+          description: OK
+
+  '/smash/confirms/{confirmId}/details':
+    post:
+      tags:
+        - Confirms
+      summary: create a confirm details
+      operationId: createConfirmDetails
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmDetailsDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+
+  '/smash/confirms/{confirmId}/details/{confirmDetailsId}':
+    patch:
+      tags:
+        - Confirms
+      summary: patch confirm details
+      operationId: updateConfirmDetailsById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+        - $ref: '#/components/parameters/pathConfirmDetailsId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfirmDetailsDto'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfirmDto'
+    delete:
+      tags:
+        - Confirms
+      summary: delete confirm details
+      operationId: deleteConfirmDetailsById
+      parameters:
+        - $ref: '#/components/parameters/pathConfirmId'
+        - $ref: '#/components/parameters/pathConfirmDetailsId'
       responses:
         '200':
           description: OK

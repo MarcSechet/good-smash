@@ -1,5 +1,6 @@
 package mic.poulet.goodsmash.smash.model.combo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -39,10 +40,10 @@ public class Combo {
 
 	@OneToMany(targetEntity = Move.class, cascade = CascadeType.ALL,
 			orphanRemoval = true)
-	private List<Move> moves;
+	private List<Move> moves = new ArrayList<>();
 
 	@ElementCollection
-	private List<String> additionalFilters; // ex : deep breath for WFT, luma, nana, etc...
+	private List<String> additionalFilters = new ArrayList<>(); // ex : deep breath for WFT, luma, nana, etc...
 
 	protected Combo() {
 	}
