@@ -35,7 +35,7 @@ public class AuthController implements AuthApi {
 			return ResponseEntity.ok(toDto(user.get()));
 		} else {
 			SmashUser newUser = new SmashUser();
-			newUser.setApproved(false);
+			newUser.setIsApproved(false);
 			newUser.setEmail(userDto.getEmail());
 			authService.save(newUser);
 			return ResponseEntity.ok(toDto(newUser));

@@ -21,7 +21,7 @@ public class SmashUser {
 	@Column(unique = true)
 	private String email;
 
-	private boolean isApproved; // if true then the user can use other webservices
+	private Boolean isApproved; // if true then the user can use other webservices
 
 	public SmashUser() {
 	}

@@ -61,6 +61,7 @@ public class PapicoloService {
 
 	public void importAllQuestionsFromCsv() {
 		try {
+			papicoloDao.deleteAll();
 			papicoloDao.saveAll(getQuestionsFromCsv(Category.NORMAL, "csv/rules_default-fr.csv"));
 			papicoloDao.saveAll(getQuestionsFromCsv(Category.HOT, "csv/rules_hot-fr.csv"));
 			papicoloDao.saveAll(getQuestionsFromCsv(Category.SILLY, "csv/rules_silly-fr.csv"));

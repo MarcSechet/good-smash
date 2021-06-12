@@ -74,6 +74,7 @@ public class ComboController implements CombosApi {
 		// We need to clear and then add all or else jpa loses track of the children entities
 		// jpaSystemException: A collection with cascade=\"all-delete-orphan\" was no longer referenced by the owning entity instance
 		combo.getMoves().clear();
+		comboService.update(combo);
 		combo.getMoves().addAll(Optional.ofNullable(comboDto.getMoves()).stream().flatMap(Collection::stream)
 				.map(moveDto -> mapper.map(moveDto, Move.class))
 				.collect(Collectors.toList()));

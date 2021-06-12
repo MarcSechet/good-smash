@@ -1,5 +1,6 @@
 package mic.poulet.goodsmash.smash.model.combo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.ElementCollection;
@@ -21,7 +22,7 @@ public class Move {
 	private Long id;
 
 	@ElementCollection
-	private List<String> inputs;
+	private List<String> inputs = new ArrayList<>();
 
 	protected Move() {
 	}

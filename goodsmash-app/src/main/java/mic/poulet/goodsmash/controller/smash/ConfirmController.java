@@ -74,6 +74,7 @@ public class ConfirmController implements ConfirmsApi {
 		// We need to clear and then add all or else jpa loses track of the children entities
 		// jpaSystemException: A collection with cascade=\"all-delete-orphan\" was no longer referenced by the owning entity instance
 		/*confirm.getConfirmDetails().clear();
+		confirmService.update(confirm);
 		confirm.getConfirmDetails().addAll(Optional.ofNullable(confirmDto.getConfirmDetailsDtos()).stream().flatMap(Collection::stream)
 				.map(confirmDetailsDto -> mapper.map(confirmDetailsDto, ConfirmDetails.class))
 				.collect(Collectors.toList()));*/

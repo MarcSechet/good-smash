@@ -1,5 +1,6 @@
 package mic.poulet.goodsmash.smash.model.tierlist;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -39,8 +40,8 @@ public class Tierlist {
 	@OneToMany(targetEntity = Tier.class, cascade = CascadeType.ALL,
 			orphanRemoval = true)
 	@OrderBy("rank ASC")
-	private List<Tier> tiers;
+	private List<Tier> tiers = new ArrayList<>();
 
 	@ElementCollection
-	private List<Long> unusedCharacterIds;
+	private List<Long> unusedCharacterIds = new ArrayList<>();
 }

@@ -73,6 +73,7 @@ public class TierlistController implements TierlistsApi {
 		// We need to clear and then add all or else jpa loses track of the children entities
 		// jpaSystemException: A collection with cascade=\"all-delete-orphan\" was no longer referenced by the owning entity instance
 		tierlist.getTiers().clear();
+		tierlistService.update(tierlist);
 		tierlist.getTiers().addAll(Optional.ofNullable(tierlistDto.getTiers()).stream().flatMap(Collection::stream)
 				.map(tierDto -> mapper.map(tierDto, Tier.class))
 				.collect(Collectors.toList()));
