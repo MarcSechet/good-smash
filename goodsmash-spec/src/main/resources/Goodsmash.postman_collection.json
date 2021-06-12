@@ -1,0 +1,2980 @@
+{
+	"info": {
+		"_postman_id": "35f426e9-c2c9-4f6b-bacd-78a06497876e",
+		"name": "Goodsmash",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tests",
+			"item": [
+				{
+					"name": "Test serveur up",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/tests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"tests"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Papicolo",
+			"item": [
+				{
+					"name": "Import from CSV",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/papicolo/questions/import",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"papicolo",
+								"questions",
+								"import"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.collectionVariables.set(\"createdQuestionId\", pm.response.json().id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\":\"Si vous trouvez que %s est un maxi bg buvez $ gorgées\",\r\n    \"nbPlayers\" : 1,\r\n    \"category\" : \"NORMAL\",\r\n    \"questionType\":  \"NORMAL\",\r\n    \"questionFromPicolo\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/papicolo/questions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"papicolo",
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Number of questions is equal to 3996\", function () {\r",
+									"    pm.expect(pm.response.json().length).to.eql(3996);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/papicolo/questions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"papicolo",
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/papicolo/questions/{{createdQuestionId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"papicolo",
+								"questions",
+								"{{createdQuestionId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\":\"Le lecteur de cette question boit $ gorgées\",\r\n    \"nbPlayers\" : 0,\r\n    \"category\" : \"SILLY\",\r\n    \"questionType\":  \"EVENT_WITH_CHILD_RIGHT_AFTER\",\r\n    \"questionFromPicolo\" : false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/papicolo/questions/{{createdQuestionId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"papicolo",
+								"questions",
+								"{{createdQuestionId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/papicolo/questions/{{createdQuestionId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"papicolo",
+								"questions",
+								"{{createdQuestionId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pepites",
+			"item": [
+				{
+					"name": "Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.collectionVariables.set(\"createdPlaylistPlaylistId\", pm.response.json().playlistId);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"playlistId\":\"PLzx6F-W2EBzPDuHnGto17Sfa6SPpxfU6u\",\r\n    \"uploaderName\" : \"Marc Sechet\",\r\n    \"isPublic\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/pepites/playlists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"pepites",
+								"playlists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/pepites/playlists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"pepites",
+								"playlists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/pepites/playlists/{{createdPlaylistPlaylistId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"pepites",
+								"playlists",
+								"{{createdPlaylistPlaylistId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isPublic\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/pepites/playlists/{{createdPlaylistPlaylistId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"pepites",
+								"playlists",
+								"{{createdPlaylistPlaylistId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add timecode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.collectionVariables.set(\"createdTimecodeId\", pm.response.json().timecodes[0].id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"songId\":\"yzPCRCUfAuQ\",\r\n    \"timecode\" : \"25000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/pepites/playlists/{{createdPlaylistPlaylistId}}/timecodes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"pepites",
+								"playlists",
+								"{{createdPlaylistPlaylistId}}",
+								"timecodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete timecode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/pepites/playlists/{{createdPlaylistPlaylistId}}/timecodes/{{createdTimecodeId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"pepites",
+								"playlists",
+								"{{createdPlaylistPlaylistId}}",
+								"timecodes",
+								"{{createdTimecodeId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/{{basePath}}/pepites/playlists/{{createdPlaylistPlaylistId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"{{basePath}}",
+								"pepites",
+								"playlists",
+								"{{createdPlaylistPlaylistId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Smash",
+			"item": [
+				{
+					"name": "Login",
+					"item": [
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdPlaylistPlaylistId\", pm.response.json().playlistId);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"email@test.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"email@test.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Characters",
+					"item": [
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdCharacterName\", pm.response.json().name);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"contentType": "",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/image-test.jpg"
+										},
+										{
+											"key": "icon",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/commande.png"
+										},
+										{
+											"key": "data",
+											"value": "{\"isFloaty\":true,\"characterWeight\":\"HEAVY\",\"bestMoves\":[{\"name\":\"WAHWHA\",\"description\":\"COUCOU\"},{\"name\":\"name\",\"description\":\"description\"}],\"tier\":\"S\",\"skillRating\":6,\"name\":\"Lucas\",\"additionalFilters\":[\"Deepbreathing\"]}\"",
+											"contentType": "application/json",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Number of characters is equal to 1\", function () {\r",
+											"    pm.expect(pm.response.json().length).to.eql(1);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters/{{createdCharacterName}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters",
+										"{{createdCharacterName}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update by name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdCharacterName\", pm.response.json().name);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "data",
+											"value": "{\"name\":\"Lucina\"}",
+											"contentType": "application/json",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters/{{createdCharacterName}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters",
+										"{{createdCharacterName}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete by name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters/{{createdCharacterName}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters",
+										"{{createdCharacterName}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Informations",
+					"item": [
+						{
+							"name": "Create character for informations",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdCharacterForInformationName\", pm.response.json().name);\r",
+											"pm.collectionVariables.set(\"createdCharacterForInformationId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"contentType": "",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/image-test.jpg"
+										},
+										{
+											"key": "icon",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/commande.png"
+										},
+										{
+											"key": "data",
+											"value": "{\"isFloaty\":true,\"characterWeight\":\"HEAVY\",\"tier\":\"S\",\"skillRating\":6,\"name\":\"Lucina\"}",
+											"contentType": "application/json",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create without targetId",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdInformationId\", pm.response.json().id);\r",
+											"pm.collectionVariables.set(\"createdInformationInformationType\", pm.response.json().informationType);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"informationType\":\"PRO\",\r\n    \"targetId\":null,\r\n    \"description\":\"OP framedata\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/informations?characterId={{createdCharacterForInformationId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"informations"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForInformationId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create with targetId",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdInformation2Id\", pm.response.json().id);\r",
+											"pm.collectionVariables.set(\"createdInformation2InformationType\", pm.response.json().informationType);\r",
+											"pm.collectionVariables.set(\"createdInformation2TargetId\", pm.response.json().targetId);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"informationType\":\"ADVANTAGE\",\r\n    \"targetId\":{{createdCharacterForInformationId}},\r\n    \"characterId\":{{createdCharacterForInformationId}},\r\n    \"description\":\"A description\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/informations?characterId={{createdCharacterForInformationId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"informations"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForInformationId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search by information type",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Number of informations is equal to 1\", function () {\r",
+											"    pm.expect(pm.response.json().length).to.eql(1);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/informations?characterId={{createdCharacterForInformationId}}&informationTypeDto={{createdInformationInformationType}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"informations"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForInformationId}}"
+										},
+										{
+											"key": "informationTypeDto",
+											"value": "{{createdInformationInformationType}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search by target id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Number of informations is equal to 1\", function () {\r",
+											"    pm.expect(pm.response.json().length).to.eql(1);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/informations?characterId={{createdCharacterForInformationId}}&targetId={{createdInformation2TargetId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"informations"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForInformationId}}"
+										},
+										{
+											"key": "targetId",
+											"value": "{{createdInformation2TargetId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/informations/{{createdInformationId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"informations",
+										"{{createdInformationId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"informationType\":\"ADVANTAGE\",\r\n    \"targetId\":{{createdCharacterForInformationId}},\r\n    \"description\":\"A modified description\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/informations/{{createdInformationId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"informations",
+										"{{createdInformationId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete by id - 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/informations/{{createdInformationId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"informations",
+										"{{createdInformationId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete by id - 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/informations/{{createdInformation2Id}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"informations",
+										"{{createdInformation2Id}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete character for information",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters/{{createdCharacterForInformationName}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters",
+										"{{createdCharacterForInformationName}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "BestMoves",
+					"item": [
+						{
+							"name": "Create character for best move",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdCharacterForBestMoveName\", pm.response.json().name);\r",
+											"pm.collectionVariables.set(\"createdCharacterForBestMoveId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"contentType": "",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/image-test.jpg"
+										},
+										{
+											"key": "icon",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/commande.png"
+										},
+										{
+											"key": "data",
+											"value": "{\"isFloaty\":true,\"characterWeight\":\"HEAVY\",\"tier\":\"S\",\"skillRating\":6,\"name\":\"Ken\"}",
+											"contentType": "application/json",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdBestMoveId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"videoUrl\":\"https://www.youtube.com/watch?v=LjdGRj7pESo\",\r\n    \"name\":\"PK Freeze\",\r\n    \"description\":\"Used to cheese the opponent. Can kill as early as 70%. Can be used twice in a row on heavy targets.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/bestMoves?characterId={{createdCharacterForBestMoveId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"bestMoves"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForBestMoveId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Number of bestMoves is equal to 1\", function () {\r",
+											"    pm.expect(pm.response.json().length).to.eql(1);\r",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/bestMoves?characterId={{createdCharacterForBestMoveId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"bestMoves"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForBestMoveId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/bestMoves/{{createdBestMoveId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"bestMoves",
+										"{{createdBestMoveId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"PK Fire\",\r\n    \"videoUrl\":\"Fake URL\",\r\n    \"description\": \"Good projectile. Has 2 hitbox, one on hit and the other is a blast after the first hit. Can be used to cheese offstage if the opponent is not careful.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/bestMoves/{{createdBestMoveId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"bestMoves",
+										"{{createdBestMoveId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/bestMoves/{{createdBestMoveId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"bestMoves",
+										"{{createdBestMoveId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete character for best move",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters/{{createdCharacterForBestMoveName}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters",
+										"{{createdCharacterForBestMoveName}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Combos",
+					"item": [
+						{
+							"name": "Create character for best move",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdCharacterForComboName\", pm.response.json().name);\r",
+											"pm.collectionVariables.set(\"createdCharacterForComboId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"contentType": "",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/image-test.jpg"
+										},
+										{
+											"key": "icon",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/commande.png"
+										},
+										{
+											"key": "data",
+											"value": "{\"isFloaty\":true,\"characterWeight\":\"HEAVY\",\"tier\":\"S\",\"skillRating\":6,\"name\":\"Mewtwo\"}",
+											"contentType": "application/json",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdComboId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"shield break\",\r\n    \"videoUrl\": \"https://www.youtube.com/watch?v=LjdGRj7pESo\",\r\n    \"description\": \"Used to cheese the opponent. Can kill as early as 70%. Can be used twice in a row on heavy targets.\",\r\n    \"minPercent\": 80,\r\n    \"maxPercent\": 120,\r\n    \"moves\": [\r\n        {\r\n            \"inputs\": [\r\n                \"Up-B\",\r\n                \"Up-Air\",\r\n                \"Back-Air\"\r\n            ]\r\n        },\r\n        {\r\n            \"inputs\": [\r\n                \"Up-Air\",\r\n                \"Up-Air\",\r\n                \"Back-Air\"\r\n            ]\r\n        }\r\n    ],\r\n    \"additionalFilters\": [\r\n        \"high rage\",\r\n        \"A fake filter\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/combos?characterId={{createdCharacterForComboId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"combos"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForComboId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Number of combos is equal to 1\", function () {\r",
+											"    pm.expect(pm.response.json().length).to.eql(1);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/combos?characterId={{createdCharacterForComboId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"combos"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForComboId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/combos/{{createdComboId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"combos",
+										"{{createdComboId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"shirudo bureku\",\r\n    \"videoUrl\": \"fake url\",\r\n    \"description\": \"A description\",\r\n    \"minPercent\": 100,\r\n    \"maxPercent\": 130,\r\n    \"moves\": [\r\n        {\r\n            \"inputs\": [\r\n                \"Up-Bair\",\r\n                \"Up-Sair\",\r\n                \"Back-Back\"\r\n            ]\r\n        },\r\n        {\r\n            \"inputs\": [\r\n                \"Up-tilt\",\r\n                \"Up-tilt\",\r\n                \"Back-tilt\"\r\n            ]\r\n        }\r\n    ],\r\n    \"additionalFilters\": [\r\n        \"Hihi\",\r\n        \"Another fake filter\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/combos/{{createdComboId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"combos",
+										"{{createdComboId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/combos/{{createdComboId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"combos",
+										"{{createdComboId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete character for best move",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters/{{createdCharacterForComboName}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters",
+										"{{createdCharacterForComboName}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Tierlists",
+					"item": [
+						{
+							"name": "Create character for tierlist",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdCharacterForTierlistName\", pm.response.json().name);\r",
+											"pm.collectionVariables.set(\"createdCharacterForTierlistId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"contentType": "",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/image-test.jpg"
+										},
+										{
+											"key": "icon",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/commande.png"
+										},
+										{
+											"key": "data",
+											"value": "{\"isFloaty\":true,\"characterWeight\":\"HEAVY\",\"tier\":\"S\",\"skillRating\":6,\"name\":\"Cloud\"}",
+											"contentType": "application/json",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdTierlistId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tiers\": [\r\n        {\r\n            \"characterIds\": [\r\n                28737,\r\n                28740,\r\n                28746\r\n            ],\r\n            \"name\": \"tier name 1\",\r\n            \"color\": \"#673ab7\"\r\n        },\r\n        {\r\n            \"characterIds\": [\r\n                28743,\r\n                28752,\r\n                28749\r\n            ],\r\n            \"name\": \"Tier 2\",\r\n            \"color\": \"#4caf50\"\r\n        }\r\n    ],\r\n    \"unusedCharacterIds\": [\r\n        28734\r\n    ],\r\n    \"name\": \"Tierlist name\",\r\n    \"description\": \"Tierlist description\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/tierlists?characterId={{createdCharacterForTierlistId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"tierlists"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForTierlistId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Number of tierlists is equal to 1\", function () {\r",
+											"    pm.expect(pm.response.json().length).to.eql(1);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/tierlists?characterId={{createdCharacterForTierlistId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"tierlists"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForTierlistId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/tierlists/{{createdTierlistId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"tierlists",
+										"{{createdTierlistId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Updated Tierlist name\",\r\n    \"description\": \"Updated Tierlist description\",\r\n    \"tiers\": [\r\n        {\r\n            \"rank\": 1,\r\n            \"name\": \"Updated Tier 2\",\r\n            \"color\": \"#4caf50\",\r\n            \"characterIds\": [\r\n                28743,\r\n                28752,\r\n                28749\r\n            ]\r\n        },\r\n            {\r\n            \"rank\": 0,\r\n            \"name\": \"Updated tier name 1\",\r\n            \"color\": \"#673ab7\",\r\n            \"characterIds\": [\r\n                28737,\r\n                28740,\r\n                28746\r\n            ]\r\n        }\r\n    ],\r\n    \"unusedCharacterIds\": [\r\n        28734\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/tierlists/{{createdTierlistId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"tierlists",
+										"{{createdTierlistId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/tierlists/{{createdTierlistId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"tierlists",
+										"{{createdTierlistId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete character for best move",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters/{{createdCharacterForTierlistName}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters",
+										"{{createdCharacterForTierlistName}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Confirms",
+					"item": [
+						{
+							"name": "Create character for confirm",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdCharacterForConfirmName\", pm.response.json().name);\r",
+											"pm.collectionVariables.set(\"createdCharacterForConfirmId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"contentType": "",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/image-test.jpg"
+										},
+										{
+											"key": "icon",
+											"type": "file",
+											"src": "/C:/Users/rguinand/Downloads/commande.png"
+										},
+										{
+											"key": "data",
+											"value": "{\"isFloaty\":true,\"characterWeight\":\"HEAVY\",\"tier\":\"S\",\"skillRating\":6,\"name\":\"Shulk\"}",
+											"contentType": "application/json",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdConfirmId\", pm.response.json().id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Confirm name\",\r\n    \"description\": \"Confirm description\",\r\n    \"comment\": \"Confirm comment\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/confirms?characterId={{createdCharacterForConfirmId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"confirms"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForConfirmId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create confirm details",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"createdConfirmDetailsId\", pm.response.json().confirmDetailsDtos[0].id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comment\": \"Confirm detail comment\",\r\n    \"killPercentRage0\": 150,\r\n    \"killPercentRage50\": 140,\r\n    \"killPercentRage100\": 130,\r\n    \"killPercentRage150\": 120,\r\n    \"targetId\": {{createdCharacterForConfirmId}}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/confirms/{{createdConfirmId}}/details?characterId={{createdCharacterForConfirmId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"confirms",
+										"{{createdConfirmId}}",
+										"details"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForConfirmId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Number of confirms is equal to 1\", function () {\r",
+											"    pm.expect(pm.response.json().length).to.eql(1);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/confirms?characterId={{createdCharacterForConfirmId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"confirms"
+									],
+									"query": [
+										{
+											"key": "characterId",
+											"value": "{{createdCharacterForConfirmId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/confirms/{{createdConfirmId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"confirms",
+										"{{createdConfirmId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Updated Confirm name\",\r\n    \"description\": \"Updated Confirm description\",\r\n    \"comment\": \"Updated Confirm comment\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/confirms/{{createdConfirmId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"confirms",
+										"{{createdConfirmId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update confirm details by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comment\": \"Updated Confirm detail comment\",\r\n    \"killPercentRage0\": 1500,\r\n    \"killPercentRage50\": 1400,\r\n    \"killPercentRage100\": 1300,\r\n    \"killPercentRage150\": 1200\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/confirms/{{createdConfirmId}}/details/{{createdConfirmDetailsId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"confirms",
+										"{{createdConfirmId}}",
+										"details",
+										"{{createdConfirmDetailsId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete confirm details by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/confirms/{{createdConfirmId}}/details/{{createdConfirmDetailsId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"confirms",
+										"{{createdConfirmId}}",
+										"details",
+										"{{createdConfirmDetailsId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/confirms/{{createdConfirmId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"confirms",
+										"{{createdConfirmId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete character for best move",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/{{basePath}}/smash/characters/{{createdCharacterForConfirmName}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"{{basePath}}",
+										"smash",
+										"characters",
+										"{{createdCharacterForConfirmName}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "createdQuestionId",
+			"value": ""
+		},
+		{
+			"key": "createdPlaylistId",
+			"value": ""
+		},
+		{
+			"key": "createPlaylistPlaylistId",
+			"value": ""
+		},
+		{
+			"key": "createdPlaylistPlaylistId",
+			"value": ""
+		},
+		{
+			"key": "createdTimecodeId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterName",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForInformationId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForInformationName",
+			"value": ""
+		},
+		{
+			"key": "createdInformationId",
+			"value": ""
+		},
+		{
+			"key": "createdInformationInformationType",
+			"value": ""
+		},
+		{
+			"key": "createdInformation2Id",
+			"value": ""
+		},
+		{
+			"key": "createdInformation2InformationType",
+			"value": ""
+		},
+		{
+			"key": "createdInformation2TargetId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForBestMoveId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForBestMoveName",
+			"value": ""
+		},
+		{
+			"key": "createdBestMoveId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForComboId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForComboName",
+			"value": ""
+		},
+		{
+			"key": "createdComboId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForTierlistId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForTierlistName",
+			"value": ""
+		},
+		{
+			"key": "createdTierlistId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForConfirmId",
+			"value": ""
+		},
+		{
+			"key": "createdCharacterForConfirmName",
+			"value": ""
+		},
+		{
+			"key": "createdConfirmId",
+			"value": ""
+		},
+		{
+			"key": "createdConfirmDetailsId",
+			"value": ""
+		},
+		{
+			"key": "targetId",
+			"value": ""
+		}
+	]
+}
