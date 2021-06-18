@@ -29,7 +29,7 @@ jobs:
           path: goodsmash-app/target/goodsmash-app.jar
       - codecov/upload:
           file: goodsmash-app/target/my-reports/jacoco.xml
-          token: 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
+          token: 65a8e438-aec0-4c92-a095-ba9f277e49e3
 
 workflows:
   # Below is the definition of your workflow.
