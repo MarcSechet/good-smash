@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import lombok.AllArgsConstructor;
@@ -24,7 +24,7 @@ import mic.poulet.goodsmash.spec.api.CharactersApi;
 import mic.poulet.goodsmash.spec.model.CharacterDto;
 
 @AllArgsConstructor
-@Controller
+@RestController
 @RequestMapping("${api-smash.base-path:}")
 public class CharacterController implements CharactersApi {
 

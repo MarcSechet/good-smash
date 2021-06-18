@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import lombok.AllArgsConstructor;
@@ -14,7 +14,7 @@ import mic.poulet.goodsmash.spec.api.AuthApi;
 import mic.poulet.goodsmash.spec.model.UserDto;
 
 @AllArgsConstructor
-@Controller
+@RestController
 @RequestMapping("${api-smash.base-path:}")
 public class AuthController implements AuthApi {
 
