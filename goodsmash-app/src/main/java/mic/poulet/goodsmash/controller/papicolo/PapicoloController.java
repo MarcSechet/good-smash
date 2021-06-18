@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
 import mic.poulet.goodsmash.papicolo.PapicoloService;
@@ -19,7 +19,7 @@ import mic.poulet.goodsmash.spec.api.PapicoloApi;
 import mic.poulet.goodsmash.spec.model.QuestionDto;
 
 @AllArgsConstructor
-@Controller
+@RestController
 @RequestMapping("${api-smash.base-path:}")
 public class PapicoloController implements PapicoloApi {
 

@@ -8,8 +8,8 @@ import java.util.stream.IntStream;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
 import mic.poulet.goodsmash.smash.CharacterService;
@@ -21,7 +21,7 @@ import mic.poulet.goodsmash.spec.api.TierlistsApi;
 import mic.poulet.goodsmash.spec.model.TierlistDto;
 
 @AllArgsConstructor
-@Controller
+@RestController
 @RequestMapping("${api-smash.base-path:}")
 public class TierlistController implements TierlistsApi {
 
