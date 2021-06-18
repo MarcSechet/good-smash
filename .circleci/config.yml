@@ -25,7 +25,7 @@ jobs:
       - store_test_results:
           path: goodsmash-app/target
       - store_artifacts:
-          path: goodsmash-app/target
+          path: goodsmash-app/target/goodsmash-app.jar
 
 workflows:
   # Below is the definition of your workflow.
