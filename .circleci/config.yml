@@ -38,3 +38,4 @@ workflows:
   build-and-test-and-generate-jacoco-report:
     jobs:
       - build-and-test
+      
